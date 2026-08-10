@@ -1,15 +1,21 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-@import "shadcn/tailwind.css";
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-heading: var(--font-sans);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+  --font-heading: var(--font-inter);
+
+  /* EstateVision HUD accents */
+  --color-hud: var(--hud);
+  --color-hud-dim: var(--hud-dim);
+  --color-threat: var(--threat);
+  --color-warn: var(--warn);
+
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -48,83 +54,110 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
-:root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
-}
-
+/*
+ * EstateVision is a dark-only surface. `:root` and `.dark` carry the same
+ * tokens so shadcn's `dark:` variants resolve correctly while the app never
+ * flashes a light theme.
+ */
+:root,
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --radius: 0.625rem;
+
+  --background: #0a0a0a;
+  --foreground: #f8fafc;
+
+  /* slate-900 @ 70% — the bento glass surface */
+  --card: rgb(15 23 42 / 0.7);
+  --card-foreground: #f8fafc;
+  --popover: #0f172a;
+  --popover-foreground: #f8fafc;
+
+  /* red is the single "act on this" accent */
+  --primary: #dc2626;
+  --primary-foreground: #ffffff;
+
+  --secondary: #1e293b;
+  --secondary-foreground: #f8fafc;
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8;
+  --accent: #1e293b;
+  --accent-foreground: #f8fafc;
+
+  /* Kept visually distinct from --primary: brighter and more orange, so a
+     real error never reads as just another red button. */
+  --destructive: #ff3333;
+  --border: #1e293b;
+  --input: #1e293b;
+  --ring: #ef4444;
+
+  --hud: #ef4444;
+  --hud-dim: rgb(239 68 68 / 0.35);
+  --threat: #ff3333;
+  --warn: #f59e0b;
+
+  --chart-1: #ef4444;
+  --chart-2: #f59e0b;
+  --chart-3: #ff3333;
+  --chart-4: #94a3b8;
+  --chart-5: #64748b;
+
+  --sidebar: #0a0a0a;
+  --sidebar-foreground: #f8fafc;
+  --sidebar-primary: #dc2626;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #1e293b;
+  --sidebar-accent-foreground: #f8fafc;
+  --sidebar-border: #1e293b;
+  --sidebar-ring: #ef4444;
 }
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
   }
   html {
     @apply font-sans;
+    color-scheme: dark;
+  }
+
+  /* WCAG AA: every interactive element keeps a visible red focus ring. */
+  :focus-visible {
+    @apply ring-hud/70 outline-none ring-2 ring-offset-2 ring-offset-[#0a0a0a];
+  }
+}
+
+@layer components {
+  /* The bento glass card used across every dashboard surface. */
+  .ev-card {
+    @apply rounded-2xl border border-slate-800 bg-slate-900/70 backdrop-blur-md;
+  }
+
+  /* Thin neon divider — HUD rule, used sparingly between data groups. */
+  .ev-divider {
+    @apply h-px w-full border-0 bg-gradient-to-r from-transparent via-[#ef4444]/30 to-transparent;
+  }
+
+  /* Monospaced data label above a value. */
+  .ev-label {
+    @apply font-mono text-[0.6875rem] uppercase tracking-[0.14em] text-slate-400;
+  }
+
+  /* Tiny red corner bracket for critical cards. */
+  .ev-bracket::before {
+    content: "";
+    @apply pointer-events-none absolute left-0 top-0 h-4 w-4 rounded-tl-2xl border-l-2 border-t-2 border-[#ef4444]/70;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

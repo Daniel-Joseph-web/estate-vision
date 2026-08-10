@@ -1,0 +1,23 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Helper: user owns this document
+    function owns(doc) {
+      return request.auth != null && request.auth.uid == doc.user_id;
+    }
+
+    match /videos/{videoId} {
+      // Users can only access their own videos
+      allow read, update, delete: if owns(resource.data);
+      // Create requires setting user_id to authenticated uid
+      allow create: if owns(request.resource.data);
+    }
+
+    match /events/{eventId} {
+      // Users can only access their own events
+      allow read, delete: if owns(resource.data);
+      // Events are immutable after creation (no update allowed)
+      allow create: if owns(request.resource.data);
+    }
+  }
+}

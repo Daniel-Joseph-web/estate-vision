@@ -1,0 +1,542 @@
+
+> frontend@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.12 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.137.1:3000
+- Environments: .env.local
+✓ Ready in 5.0s
+
+○ Compiling / ...
+ GET / 200 in 57s (next.js: 52s, application-code: 4.3s)
+ GET / 200 in 880ms (next.js: 71ms, application-code: 809ms)
+○ Compiling /login ...
+ GET /login 200 in 7.5s (next.js: 6.6s, application-code: 877ms)
+  Reload env: .env.local
+ GET / 200 in 10.6s (next.js: 3.7s, application-code: 6.8s)
+ GET / 200 in 718ms (next.js: 63ms, application-code: 655ms)
+ GET /login 200 in 2.5s (next.js: 1151ms, application-code: 1326ms)
+ GET /login 200 in 1523ms (next.js: 528ms, application-code: 994ms)
+ GET / 200 in 2.3s (next.js: 97ms, application-code: 2.2s)
+✓ Compiled in 12.9s
+ GET / 200 in 33.5s (next.js: 14.9s, application-code: 18.6s)
+✓ Compiled in 31.4s
+ GET / 200 in 3.2s (next.js: 1755ms, application-code: 1401ms)
+ GET / 200 in 827ms (next.js: 148ms, application-code: 680ms)
+✓ Finished writing to filesystem cache in 38.3s
+✓ Compiled in 8s
+ GET / 200 in 14.4s (next.js: 11.0s, application-code: 3.4s)
+ GET / 200 in 2.5s (next.js: 186ms, application-code: 2.3s)
+ GET /login 200 in 31.9s (next.js: 8.9s, application-code: 23.0s)
+ GET /login 200 in 9.5s (next.js: 7.0s, application-code: 2.5s)
+ GET / 200 in 39.9s (next.js: 2.1s, application-code: 37.8s)
+ GET /login 200 in 4.1s (next.js: 134ms, application-code: 4.0s)
+○ Compiling /dashboard ...
+ GET /dashboard 200 in 44s (next.js: 43s, application-code: 1390ms)
+ GET /dashboard 200 in 23.8s (next.js: 23.3s, application-code: 587ms)
+✓ Finished writing to filesystem cache in 13.4s
+✓ Finished filesystem cache database compaction in 10.4s
+ GET /login 200 in 857ms (next.js: 194ms, application-code: 663ms)
+ GET /login 200 in 1129ms (next.js: 126ms, application-code: 1003ms)
+✓ Compiled in 13.5s
+ GET /login 200 in 5.9s (next.js: 4.1s, application-code: 1889ms)
+ GET /login 200 in 4.0s (next.js: 119ms, application-code: 3.8s)
+ GET /login 200 in 2.7s (next.js: 43ms, application-code: 2.7s)
+○ Compiling /_not-found/page ...
+ GET /login-bg.jpg 404 in 17.4s (next.js: 10.1s, application-code: 7.3s)
+⨯ The requested resource isn't a valid image for /login-bg.jpg received null
+ GET /login 200 in 4.8s (next.js: 405ms, application-code: 4.4s)
+[browser] Image with src "/login-bg.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+✓ Compiled in 12.4s
+ GET /login 200 in 4.0s (next.js: 2.8s, application-code: 1130ms)
+✓ Compiled in 6s
+ GET /login 200 in 349ms (next.js: 64ms, application-code: 286ms)
+✓ Finished filesystem cache database compaction in 13.2s
+ GET /login 200 in 18.3s (next.js: 157ms, application-code: 18.1s)
+[browser] Image with src "/login-bg.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+✓ Compiled in 7.5s
+ GET /login 200 in 8.8s (next.js: 8.0s, application-code: 818ms)
+ GET /dashboard 200 in 3.0s (next.js: 1687ms, application-code: 1299ms)
+○ Compiling /dashboard/upload ...
+ GET /dashboard/upload 200 in 49s (next.js: 47s, application-code: 2.3s)
+ GET /dashboard 200 in 3.7s (next.js: 90ms, application-code: 3.7s)
+✓ Compiled in 2.5s
+ GET /dashboard 200 in 5.5s (next.js: 2.2s, application-code: 3.3s)
+✓ Compiled in 4.5s
+ GET /dashboard 200 in 1419ms (next.js: 1053ms, application-code: 366ms)
+✓ Compiled in 15s
+✓ Finished writing to filesystem cache in 13.3s
+ GET /dashboard 200 in 36.1s (next.js: 14.7s, application-code: 21.5s)
+ GET /dashboard 200 in 5.4s (next.js: 2.4s, application-code: 3.0s)
+ GET /dashboard 200 in 5.4s (next.js: 1636ms, application-code: 3.8s)
+ GET /dashboard 200 in 5.6s (next.js: 1299ms, application-code: 4.3s)
+ GET /dashboard 200 in 37.0s (next.js: 21.9s, application-code: 15.0s)
+✓ Finished filesystem cache database compaction in 41s
+ GET /dashboard 200 in 6.1s (next.js: 4.2s, application-code: 1878ms)
+✓ Compiled in 6.6s
+ GET /dashboard 200 in 17.7s (next.js: 1060ms, application-code: 16.7s)
+✓ Compiled in 10.1s
+ GET /dashboard 200 in 1957ms (next.js: 1406ms, application-code: 551ms)
+✓ Compiled in 1941ms
+ GET /dashboard 200 in 2.2s (next.js: 1406ms, application-code: 764ms)
+ GET /dashboard 200 in 24.6s (next.js: 3.7s, application-code: 20.8s)
+✓ Compiled in 10.8s
+ GET /dashboard 200 in 53s (next.js: 31.5s, application-code: 21.1s)
+✓ Compiled in 20.8s
+ GET /dashboard 200 in 42s (next.js: 25.8s, application-code: 16.5s)
+ GET /dashboard/upload 200 in 9.6s (next.js: 6.4s, application-code: 3.2s)
+✓ Compiled in 6.6s
+ GET /dashboard/upload 200 in 7.0s (next.js: 5.5s, application-code: 1523ms)
+✓ Compiled in 3.4s
+ GET /dashboard/upload 200 in 3.1s (next.js: 2.0s, application-code: 1053ms)
+○ Compiling /dashboard/reports ...
+ GET /dashboard/reports 200 in 56s (next.js: 55s, application-code: 689ms)
+✓ Finished writing to filesystem cache in 22.2s
+✓ Finished filesystem cache database compaction in 18.6s
+✓ Compiled in 2.9s
+ GET /dashboard/reports 200 in 1723ms (next.js: 1178ms, application-code: 545ms)
+✓ Compiled in 1517ms
+ GET /dashboard/reports 200 in 2.6s (next.js: 2.0s, application-code: 637ms)
+✓ Compiled in 673ms
+ GET /dashboard/reports 200 in 1666ms (next.js: 1220ms, application-code: 446ms)
+ GET /dashboard/upload 200 in 867ms (next.js: 164ms, application-code: 703ms)
+ GET /dashboard/reports 200 in 172ms (next.js: 33ms, application-code: 139ms)
+ GET /dashboard 200 in 408ms (next.js: 195ms, application-code: 213ms)
+✓ Compiled in 5.7s
+ GET /dashboard 200 in 2.6s (next.js: 1206ms, application-code: 1438ms)
+ GET /dashboard/upload 200 in 3.9s (next.js: 2.7s, application-code: 1200ms)
+ POST /dashboard/upload 200 in 2.2min (next.js: 62ms, application-code: 2.2min)
+  └─ ƒ registerVideo({"contentType":"video/mp4","idToken":"","name":"estateVision_cinematic_story.mp4","...":"1 item not stringified"}) in 24ms app/actions/register-video.ts
+✓ Compiled in 33ms
+ POST /dashboard/upload 200 in 3.2s (next.js: 2.5s, application-code: 619ms)
+  └─ ƒ getStorageUrl({"contentType":"video/mp4","idToken":"","storageKey":"mock-user/vid_mock_qvmany6i/estateVision_cinematic_story.mp4"}) in 2ms app/actions/get-storage-url.ts
+ GET /dashboard/upload 200 in 3.1s (next.js: 1051ms, application-code: 2.1s)
+ GET /dashboard/upload 200 in 20.3s (next.js: 5.7s, application-code: 14.6s)
+ POST /dashboard/upload 200 in 371ms (next.js: 81ms, application-code: 289ms)
+  └─ ƒ registerVideo({"contentType":"video/mp4","idToken":"","name":"estateVision_cinematic_story.mp4","...":"1 item not stringified"}) in 14ms app/actions/register-video.ts
+ POST /dashboard/upload 200 in 356ms (next.js: 67ms, application-code: 289ms)
+  └─ ƒ getStorageUrl({"contentType":"video/mp4","idToken":"","storageKey":"mock-user/vid_mock_kzw1gfew/estateVision_cinematic_story.mp4"}) in 4ms app/actions/get-storage-url.ts
+○ Compiling /dashboard/video/[id] ...
+⨯ Error: Jest worker encountered 2 child process exceptions, exceeding retry limit
+    at ignore-listed frames {
+  type: 'WorkerError',
+  page: '/dashboard/video/vid_mock_kzw1gfew'
+}
+○ Compiling /_error ...
+ GET /dashboard/video/vid_mock_kzw1gfew 500 in 67s (next.js: 55s, application-code: 12.6s)
+✓ Finished writing to filesystem cache in 14.8s
+⨯ Error: Jest worker encountered 2 child process exceptions, exceeding retry limit
+    at ignore-listed frames {
+  type: 'WorkerError',
+  page: '/dashboard/video/vid_mock_kzw1gfew'
+}
+ GET /dashboard/video/vid_mock_kzw1gfew 500 in 14.2s (next.js: 12.9s, application-code: 1281ms)
+[browser] Uncaught Error: Jest worker encountered 2 child process exceptions, exceeding retry limit
+✓ Finished filesystem cache database compaction in 28.1s
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+      <LoadingBoundary name="/" loading={null}>
+        <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+          <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+            <RedirectBoundary>
+              <RedirectErrorBoundary router={{...}}>
+                <InnerLayoutRouter url="/dashboard" tree={[...]} params={{}} cacheNode={{...}} segmentPath={[...]} ...>
+                  <SegmentViewNode type="layout" pagePath="dashboard/...">
+                    <SegmentTrieNode>
+                    <script>
+                    <script>
+                    <script>
+                    <ClientSegmentRoot Component={function DashboardLayout} slots={{...}} ...>
+                      <DashboardLayout params={Promise}>
+                        <div className="min-h-dvh ...">
+                          <TopBar>
+                            <header
++                             className="fixed inset-x-0 top-0 z-40 h-16 border-b border-neutral-800/80 bg-[#0A0A0A]/9..."
+-                             className="fixed inset-x-0 top-0 z-40 h-16 border-b border-slate-800/80 bg-[#0A0A0A]/90 ..."
+                            >
+                              <div className="flex h-ful...">
+                                <LinkComponent>
+                                <div className="ml-auto fl...">
+                                  <LinkComponent>
+                                  <div ref={{current:null}} className="relative">
+                                    <button
+                                      type="button"
+                                      onClick={function onClick}
+                                      aria-expanded={false}
+                                      aria-label="Account menu"
++                                     className="flex size-9 items-center justify-center rounded-full border border-ne..."
+-                                     className="flex size-9 items-center justify-center rounded-full border border-sl..."
+                                    >
++                                     DM
+                          ...
+                ...
+ 
+  Reload env: .env.local
+✓ Compiled in 24.5s
+✓ Finished writing to filesystem cache in 21.1s
+  Reload env: .env.local
+  Reload env: .env.local
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+      <LoadingBoundary name="/" loading={null}>
+        <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+          <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+            <RedirectBoundary>
+              <RedirectErrorBoundary router={{...}}>
+                <InnerLayoutRouter url="/dashboard" tree={[...]} params={{}} cacheNode={{...}} segmentPath={[...]} ...>
+                  <SegmentViewNode type="layout" pagePath="dashboard/...">
+                    <SegmentTrieNode>
+                    <script>
+                    <script>
+                    <script>
+                    <ClientSegmentRoot Component={function DashboardLayout} slots={{...}} ...>
+                      <DashboardLayout params={Promise}>
+                        <div className="min-h-dvh ...">
+                          <TopBar>
+                            <header
++                             className="fixed inset-x-0 top-0 z-40 h-16 border-b border-neutral-800/80 bg-[#0A0A0A]/9..."
+-                             className="fixed inset-x-0 top-0 z-40 h-16 border-b border-slate-800/80 bg-[#0A0A0A]/90 ..."
+                            >
+                              <div className="flex h-ful...">
+                                <LinkComponent>
+                                <div className="ml-auto fl...">
+                                  <LinkComponent>
+                                  <div ref={{current:null}} className="relative">
+                                    <button
+                                      type="button"
+                                      onClick={function onClick}
+                                      aria-expanded={false}
+                                      aria-label="Account menu"
++                                     className="flex size-9 items-center justify-center rounded-full border border-ne..."
+-                                     className="flex size-9 items-center justify-center rounded-full border border-sl..."
+                                    >
++                                     DM
+                          ...
+                ...
+ 
+ GET /dashboard 200 in 58s (next.js: 17.4s, application-code: 40s)
+ GET /login 200 in 4.1s (next.js: 3.5s, application-code: 610ms)
+[browser] Image with src "/login-bg.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+ GET /dashboard 200 in 2.0s (next.js: 237ms, application-code: 1780ms)
+ GET /dashboard 200 in 957ms (next.js: 267ms, application-code: 690ms)
+ GET /dashboard 200 in 10.9s (next.js: 6.0s, application-code: 4.8s)
+  Reload env: .env.local
+  Reload env: .env.local
+✓ Finished writing to filesystem cache in 64s
+✓ Finished filesystem cache database compaction in 11.9s
+✓ Finished filesystem cache database compaction in 38.3s
+✓ Compiled in 155.2s
+⚠ Fast Refresh had to perform a full reload when ./lib/api/client.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /dashboard 200 in 19.5s (next.js: 17.1s, application-code: 2.4s)
+ GET /dashboard 200 in 2.5min (next.js: 44s, application-code: 106s)
+ GET /dashboard 200 in 2.2min (next.js: 30.4s, application-code: 99s)
+ GET /dashboard 200 in 2.5min (next.js: 47s, application-code: 105s)
+ GET /login 200 in 11.4s (next.js: 9.5s, application-code: 1903ms)
+[browser] Image with src "/login-bg.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+ GET /dashboard 200 in 2.8s (next.js: 154ms, application-code: 2.6s)
+ GET /dashboard 200 in 1656ms (next.js: 598ms, application-code: 1058ms)
+ GET /dashboard/upload 200 in 4.4s (next.js: 3.6s, application-code: 729ms)
+ GET /dashboard 200 in 883ms (next.js: 58ms, application-code: 825ms)
+ GET /login 200 in 2.4s (next.js: 73ms, application-code: 2.4s)
+ GET /login 200 in 1564ms (next.js: 652ms, application-code: 912ms)
+ GET /dashboard 200 in 3.4s (next.js: 71ms, application-code: 3.4s)
+ GET /dashboard 200 in 1384ms (next.js: 205ms, application-code: 1179ms)
+  Reload env: .env.local
+  Reload env: .env.local
+✓ Compiled in 2ms
+✓ Finished writing to filesystem cache in 31.7s
+✓ Finished filesystem cache database compaction in 21.5s
+  Reload env: .env.local
+  Reload env: .env.local
+  Reload env: .env.local
+  Reload env: .env.local
+ GET /dashboard/upload 200 in 12.2s (next.js: 10.3s, application-code: 1919ms)
+  Reload env: .env.local
+ GET /dashboard 200 in 118s (next.js: 26.5s, application-code: 92s)
+[browser] ⨯ unhandledRejection: Error: Database is closing/hidden
+ GET /dashboard 200 in 2.9s (next.js: 204ms, application-code: 2.7s)
+ GET /dashboard/upload 200 in 3.4s (next.js: 2.5s, application-code: 945ms)
+ POST /dashboard/upload 200 in 28.0s (next.js: 114ms, application-code: 27.9s)
+  └─ ƒ registerVideo({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjIwY2FkODZkNzY5ZmFkZTViODkxNmQ5Y2U1MDc0YzgyMGYwNjdkNTIiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3MjUyMiwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2MjcyNTIyLCJleHAiOjE3ODYyNzYxMjIsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.riI0GNVUlZpjjpoLb72lIzOkr9ptXpm04P06mIz5mS6DJAG42I8Kd41Opr8gx-_6ikQNYWPBi7X2X_Eb1LBxWsHRjAQiole-rpoP2ea0uklIBi3if6CZquQ0iLBo-lx7ZBpuWtyUK1TlVqNZNMaxq9TEfjYRJOM0gPFHAfGhTwT-3CynvFAMX9m4AvSSZrO_PxzZdHPInpna5McurAUSY2oeZ_pvjV60DrepfU5-STLuSwc2edeCd8SMomNFBJ_ENwnnrEZtzvlmoKsS8kFxjv5VQELMJ4imA7ceAv57Lc2tanGC4ZwcsypDe5A4l88zi_nIwY7D2PSaAEHXMjGPsg","name":"estateVision_cctv_background.mp4","...":"1 item not stringified"}) in 24604ms app/actions/register-video.ts
+ POST /dashboard/upload 200 in 12.3s (next.js: 2.8s, application-code: 9.5s)
+  └─ ƒ getStorageUrl({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjIwY2FkODZkNzY5ZmFkZTViODkxNmQ5Y2U1MDc0YzgyMGYwNjdkNTIiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3MjUyMiwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2MjcyNTIyLCJleHAiOjE3ODYyNzYxMjIsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.riI0GNVUlZpjjpoLb72lIzOkr9ptXpm04P06mIz5mS6DJAG42I8Kd41Opr8gx-_6ikQNYWPBi7X2X_Eb1LBxWsHRjAQiole-rpoP2ea0uklIBi3if6CZquQ0iLBo-lx7ZBpuWtyUK1TlVqNZNMaxq9TEfjYRJOM0gPFHAfGhTwT-3CynvFAMX9m4AvSSZrO_PxzZdHPInpna5McurAUSY2oeZ_pvjV60DrepfU5-STLuSwc2edeCd8SMomNFBJ_ENwnnrEZtzvlmoKsS8kFxjv5VQELMJ4imA7ceAv57Lc2tanGC4ZwcsypDe5A4l88zi_nIwY7D2PSaAEHXMjGPsg","storageKey":"e7eHL02kVqMy019fILBt423Q9Tu1/JoYXP4exJnc8mwjlq2ur/estateVision_cctv_background.mp4"}) in 7545ms app/actions/get-storage-url.ts
+ POST /dashboard/upload 200 in 3.9s (next.js: 180ms, application-code: 3.7s)
+  └─ ƒ registerVideo({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjIwY2FkODZkNzY5ZmFkZTViODkxNmQ5Y2U1MDc0YzgyMGYwNjdkNTIiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3MjUyMiwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2MjcyNTIyLCJleHAiOjE3ODYyNzYxMjIsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.riI0GNVUlZpjjpoLb72lIzOkr9ptXpm04P06mIz5mS6DJAG42I8Kd41Opr8gx-_6ikQNYWPBi7X2X_Eb1LBxWsHRjAQiole-rpoP2ea0uklIBi3if6CZquQ0iLBo-lx7ZBpuWtyUK1TlVqNZNMaxq9TEfjYRJOM0gPFHAfGhTwT-3CynvFAMX9m4AvSSZrO_PxzZdHPInpna5McurAUSY2oeZ_pvjV60DrepfU5-STLuSwc2edeCd8SMomNFBJ_ENwnnrEZtzvlmoKsS8kFxjv5VQELMJ4imA7ceAv57Lc2tanGC4ZwcsypDe5A4l88zi_nIwY7D2PSaAEHXMjGPsg","name":"estateVision_cctv_background.mp4","...":"1 item not stringified"}) in 935ms app/actions/register-video.ts
+ POST /dashboard/upload 200 in 3.8s (next.js: 222ms, application-code: 3.6s)
+  └─ ƒ getStorageUrl({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjIwY2FkODZkNzY5ZmFkZTViODkxNmQ5Y2U1MDc0YzgyMGYwNjdkNTIiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3MjUyMiwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2MjcyNTIyLCJleHAiOjE3ODYyNzYxMjIsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.riI0GNVUlZpjjpoLb72lIzOkr9ptXpm04P06mIz5mS6DJAG42I8Kd41Opr8gx-_6ikQNYWPBi7X2X_Eb1LBxWsHRjAQiole-rpoP2ea0uklIBi3if6CZquQ0iLBo-lx7ZBpuWtyUK1TlVqNZNMaxq9TEfjYRJOM0gPFHAfGhTwT-3CynvFAMX9m4AvSSZrO_PxzZdHPInpna5McurAUSY2oeZ_pvjV60DrepfU5-STLuSwc2edeCd8SMomNFBJ_ENwnnrEZtzvlmoKsS8kFxjv5VQELMJ4imA7ceAv57Lc2tanGC4ZwcsypDe5A4l88zi_nIwY7D2PSaAEHXMjGPsg","storageKey":"e7eHL02kVqMy019fILBt423Q9Tu1/tqlW7oUIfTGlISqsFPib/estateVision_cctv_background.mp4"}) in 900ms app/actions/get-storage-url.ts
+ POST /dashboard/upload 200 in 6.0s (next.js: 2.9s, application-code: 3.1s)
+  └─ ƒ registerVideo({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjIwY2FkODZkNzY5ZmFkZTViODkxNmQ5Y2U1MDc0YzgyMGYwNjdkNTIiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3MjUyMiwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2MjcyNTIyLCJleHAiOjE3ODYyNzYxMjIsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.riI0GNVUlZpjjpoLb72lIzOkr9ptXpm04P06mIz5mS6DJAG42I8Kd41Opr8gx-_6ikQNYWPBi7X2X_Eb1LBxWsHRjAQiole-rpoP2ea0uklIBi3if6CZquQ0iLBo-lx7ZBpuWtyUK1TlVqNZNMaxq9TEfjYRJOM0gPFHAfGhTwT-3CynvFAMX9m4AvSSZrO_PxzZdHPInpna5McurAUSY2oeZ_pvjV60DrepfU5-STLuSwc2edeCd8SMomNFBJ_ENwnnrEZtzvlmoKsS8kFxjv5VQELMJ4imA7ceAv57Lc2tanGC4ZwcsypDe5A4l88zi_nIwY7D2PSaAEHXMjGPsg","name":"estateVision_cctv_background.mp4","...":"1 item not stringified"}) in 585ms app/actions/register-video.ts
+ POST /dashboard/upload 200 in 522ms (next.js: 48ms, application-code: 475ms)
+  └─ ƒ getStorageUrl({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjIwY2FkODZkNzY5ZmFkZTViODkxNmQ5Y2U1MDc0YzgyMGYwNjdkNTIiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3MjUyMiwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2MjcyNTIyLCJleHAiOjE3ODYyNzYxMjIsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.riI0GNVUlZpjjpoLb72lIzOkr9ptXpm04P06mIz5mS6DJAG42I8Kd41Opr8gx-_6ikQNYWPBi7X2X_Eb1LBxWsHRjAQiole-rpoP2ea0uklIBi3if6CZquQ0iLBo-lx7ZBpuWtyUK1TlVqNZNMaxq9TEfjYRJOM0gPFHAfGhTwT-3CynvFAMX9m4AvSSZrO_PxzZdHPInpna5McurAUSY2oeZ_pvjV60DrepfU5-STLuSwc2edeCd8SMomNFBJ_ENwnnrEZtzvlmoKsS8kFxjv5VQELMJ4imA7ceAv57Lc2tanGC4ZwcsypDe5A4l88zi_nIwY7D2PSaAEHXMjGPsg","storageKey":"e7eHL02kVqMy019fILBt423Q9Tu1/bGgwaefkUTHePA1cDQXY/estateVision_cctv_background.mp4"}) in 387ms app/actions/get-storage-url.ts
+ POST /dashboard/upload 200 in 744ms (next.js: 54ms, application-code: 690ms)
+  └─ ƒ registerVideo({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzQ1NTQ4NTU1NTYxOTYwZjQ5MWQ1MDYzOWU1NTY1N2IyMTJhYmMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3MjUyMiwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2Mjc1ODI0LCJleHAiOjE3ODYyNzk0MjQsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.LXFJEaheX9vzUlpCLC6UzX2SqvdRylD3a3WqaLU121G3mnPk2I8nHp617P6wxb7VIkzaDlKtYJpjkwF4usizyqDNZu9k2mxDeEusn7q6AfaGcLnrdTMojanzVKNkDCzuAFYLc0YdAigcQOsldXts-YVTTPtOBEln2t2xTIwqDEN2LhWog_H1MatP1rHcKw0xTSMx3kdv9WcrtL-WaewBydQDPVGTDUjnZ_ITopcKkMpCSS5yj-Fo473ZG3k3cpDeLsqMNYzYTaCWsE6zixfPwGCz5f4xu0nOGimgU6j8ZF81_FLFkSiKko0eB4PuL0IPLD_CQ7f3N4rMZ89jvupM_w","name":"estateVision_cctv_background.mp4","...":"1 item not stringified"}) in 533ms app/actions/register-video.ts
+ POST /dashboard/upload 200 in 542ms (next.js: 117ms, application-code: 425ms)
+  └─ ƒ getStorageUrl({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzQ1NTQ4NTU1NTYxOTYwZjQ5MWQ1MDYzOWU1NTY1N2IyMTJhYmMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3MjUyMiwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2Mjc1ODI0LCJleHAiOjE3ODYyNzk0MjQsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.LXFJEaheX9vzUlpCLC6UzX2SqvdRylD3a3WqaLU121G3mnPk2I8nHp617P6wxb7VIkzaDlKtYJpjkwF4usizyqDNZu9k2mxDeEusn7q6AfaGcLnrdTMojanzVKNkDCzuAFYLc0YdAigcQOsldXts-YVTTPtOBEln2t2xTIwqDEN2LhWog_H1MatP1rHcKw0xTSMx3kdv9WcrtL-WaewBydQDPVGTDUjnZ_ITopcKkMpCSS5yj-Fo473ZG3k3cpDeLsqMNYzYTaCWsE6zixfPwGCz5f4xu0nOGimgU6j8ZF81_FLFkSiKko0eB4PuL0IPLD_CQ7f3N4rMZ89jvupM_w","storageKey":"e7eHL02kVqMy019fILBt423Q9Tu1/kSiTAf66T7bt1eutZKoI/estateVision_cctv_background.mp4"}) in 161ms app/actions/get-storage-url.ts
+ POST /dashboard/upload 200 in 4.3s (next.js: 1142ms, application-code: 3.1s)
+  └─ ƒ registerVideo({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzQ1NTQ4NTU1NTYxOTYwZjQ5MWQ1MDYzOWU1NTY1N2IyMTJhYmMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3MjUyMiwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2Mjc1ODI0LCJleHAiOjE3ODYyNzk0MjQsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.LXFJEaheX9vzUlpCLC6UzX2SqvdRylD3a3WqaLU121G3mnPk2I8nHp617P6wxb7VIkzaDlKtYJpjkwF4usizyqDNZu9k2mxDeEusn7q6AfaGcLnrdTMojanzVKNkDCzuAFYLc0YdAigcQOsldXts-YVTTPtOBEln2t2xTIwqDEN2LhWog_H1MatP1rHcKw0xTSMx3kdv9WcrtL-WaewBydQDPVGTDUjnZ_ITopcKkMpCSS5yj-Fo473ZG3k3cpDeLsqMNYzYTaCWsE6zixfPwGCz5f4xu0nOGimgU6j8ZF81_FLFkSiKko0eB4PuL0IPLD_CQ7f3N4rMZ89jvupM_w","name":"estateVision_cctv_background.mp4","...":"1 item not stringified"}) in 1824ms app/actions/register-video.ts
+ POST /dashboard/upload 200 in 7.5s (next.js: 1293ms, application-code: 6.2s)
+  └─ ƒ getStorageUrl({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzQ1NTQ4NTU1NTYxOTYwZjQ5MWQ1MDYzOWU1NTY1N2IyMTJhYmMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3MjUyMiwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2Mjc1ODI0LCJleHAiOjE3ODYyNzk0MjQsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.LXFJEaheX9vzUlpCLC6UzX2SqvdRylD3a3WqaLU121G3mnPk2I8nHp617P6wxb7VIkzaDlKtYJpjkwF4usizyqDNZu9k2mxDeEusn7q6AfaGcLnrdTMojanzVKNkDCzuAFYLc0YdAigcQOsldXts-YVTTPtOBEln2t2xTIwqDEN2LhWog_H1MatP1rHcKw0xTSMx3kdv9WcrtL-WaewBydQDPVGTDUjnZ_ITopcKkMpCSS5yj-Fo473ZG3k3cpDeLsqMNYzYTaCWsE6zixfPwGCz5f4xu0nOGimgU6j8ZF81_FLFkSiKko0eB4PuL0IPLD_CQ7f3N4rMZ89jvupM_w","storageKey":"e7eHL02kVqMy019fILBt423Q9Tu1/k0QVsT4pkMHuIVwar3TW/estateVision_cctv_background.mp4"}) in 4395ms app/actions/get-storage-url.ts
+ POST /dashboard/upload 200 in 1628ms (next.js: 229ms, application-code: 1399ms)
+  └─ ƒ registerVideo({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzQ1NTQ4NTU1NTYxOTYwZjQ5MWQ1MDYzOWU1NTY1N2IyMTJhYmMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3MjUyMiwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2Mjc1ODI0LCJleHAiOjE3ODYyNzk0MjQsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.LXFJEaheX9vzUlpCLC6UzX2SqvdRylD3a3WqaLU121G3mnPk2I8nHp617P6wxb7VIkzaDlKtYJpjkwF4usizyqDNZu9k2mxDeEusn7q6AfaGcLnrdTMojanzVKNkDCzuAFYLc0YdAigcQOsldXts-YVTTPtOBEln2t2xTIwqDEN2LhWog_H1MatP1rHcKw0xTSMx3kdv9WcrtL-WaewBydQDPVGTDUjnZ_ITopcKkMpCSS5yj-Fo473ZG3k3cpDeLsqMNYzYTaCWsE6zixfPwGCz5f4xu0nOGimgU6j8ZF81_FLFkSiKko0eB4PuL0IPLD_CQ7f3N4rMZ89jvupM_w","name":"estateVision_cctv_background.mp4","...":"1 item not stringified"}) in 551ms app/actions/register-video.ts
+ POST /dashboard/upload 200 in 1317ms (next.js: 100ms, application-code: 1217ms)
+  └─ ƒ getStorageUrl({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzQ1NTQ4NTU1NTYxOTYwZjQ5MWQ1MDYzOWU1NTY1N2IyMTJhYmMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3MjUyMiwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2Mjc1ODI0LCJleHAiOjE3ODYyNzk0MjQsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.LXFJEaheX9vzUlpCLC6UzX2SqvdRylD3a3WqaLU121G3mnPk2I8nHp617P6wxb7VIkzaDlKtYJpjkwF4usizyqDNZu9k2mxDeEusn7q6AfaGcLnrdTMojanzVKNkDCzuAFYLc0YdAigcQOsldXts-YVTTPtOBEln2t2xTIwqDEN2LhWog_H1MatP1rHcKw0xTSMx3kdv9WcrtL-WaewBydQDPVGTDUjnZ_ITopcKkMpCSS5yj-Fo473ZG3k3cpDeLsqMNYzYTaCWsE6zixfPwGCz5f4xu0nOGimgU6j8ZF81_FLFkSiKko0eB4PuL0IPLD_CQ7f3N4rMZ89jvupM_w","storageKey":"e7eHL02kVqMy019fILBt423Q9Tu1/Ep1qZfTYelryOisdikik/estateVision_cctv_background.mp4"}) in 696ms app/actions/get-storage-url.ts
+ POST /dashboard/upload 200 in 1309ms (next.js: 94ms, application-code: 1216ms)
+  └─ ƒ registerVideo({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzQ1NTQ4NTU1NTYxOTYwZjQ5MWQ1MDYzOWU1NTY1N2IyMTJhYmMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3MjUyMiwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2Mjc1ODI0LCJleHAiOjE3ODYyNzk0MjQsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.LXFJEaheX9vzUlpCLC6UzX2SqvdRylD3a3WqaLU121G3mnPk2I8nHp617P6wxb7VIkzaDlKtYJpjkwF4usizyqDNZu9k2mxDeEusn7q6AfaGcLnrdTMojanzVKNkDCzuAFYLc0YdAigcQOsldXts-YVTTPtOBEln2t2xTIwqDEN2LhWog_H1MatP1rHcKw0xTSMx3kdv9WcrtL-WaewBydQDPVGTDUjnZ_ITopcKkMpCSS5yj-Fo473ZG3k3cpDeLsqMNYzYTaCWsE6zixfPwGCz5f4xu0nOGimgU6j8ZF81_FLFkSiKko0eB4PuL0IPLD_CQ7f3N4rMZ89jvupM_w","name":"estateVision_cctv_background.mp4","...":"1 item not stringified"}) in 1036ms app/actions/register-video.ts
+ POST /dashboard/upload 200 in 1995ms (next.js: 494ms, application-code: 1501ms)
+  └─ ƒ getStorageUrl({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzQ1NTQ4NTU1NTYxOTYwZjQ5MWQ1MDYzOWU1NTY1N2IyMTJhYmMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3MjUyMiwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2Mjc1ODI0LCJleHAiOjE3ODYyNzk0MjQsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.LXFJEaheX9vzUlpCLC6UzX2SqvdRylD3a3WqaLU121G3mnPk2I8nHp617P6wxb7VIkzaDlKtYJpjkwF4usizyqDNZu9k2mxDeEusn7q6AfaGcLnrdTMojanzVKNkDCzuAFYLc0YdAigcQOsldXts-YVTTPtOBEln2t2xTIwqDEN2LhWog_H1MatP1rHcKw0xTSMx3kdv9WcrtL-WaewBydQDPVGTDUjnZ_ITopcKkMpCSS5yj-Fo473ZG3k3cpDeLsqMNYzYTaCWsE6zixfPwGCz5f4xu0nOGimgU6j8ZF81_FLFkSiKko0eB4PuL0IPLD_CQ7f3N4rMZ89jvupM_w","storageKey":"e7eHL02kVqMy019fILBt423Q9Tu1/CJYI1TOZx1MCeahVFEsq/estateVision_cctv_background.mp4"}) in 353ms app/actions/get-storage-url.ts
+ POST /dashboard/upload 200 in 1318ms (next.js: 188ms, application-code: 1130ms)
+  └─ ƒ registerVideo({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzQ1NTQ4NTU1NTYxOTYwZjQ5MWQ1MDYzOWU1NTY1N2IyMTJhYmMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3MjUyMiwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2Mjc1ODI0LCJleHAiOjE3ODYyNzk0MjQsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.LXFJEaheX9vzUlpCLC6UzX2SqvdRylD3a3WqaLU121G3mnPk2I8nHp617P6wxb7VIkzaDlKtYJpjkwF4usizyqDNZu9k2mxDeEusn7q6AfaGcLnrdTMojanzVKNkDCzuAFYLc0YdAigcQOsldXts-YVTTPtOBEln2t2xTIwqDEN2LhWog_H1MatP1rHcKw0xTSMx3kdv9WcrtL-WaewBydQDPVGTDUjnZ_ITopcKkMpCSS5yj-Fo473ZG3k3cpDeLsqMNYzYTaCWsE6zixfPwGCz5f4xu0nOGimgU6j8ZF81_FLFkSiKko0eB4PuL0IPLD_CQ7f3N4rMZ89jvupM_w","name":"estateVision_cctv_background.mp4","...":"1 item not stringified"}) in 529ms app/actions/register-video.ts
+ POST /dashboard/upload 200 in 968ms (next.js: 113ms, application-code: 855ms)
+  └─ ƒ getStorageUrl({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzQ1NTQ4NTU1NTYxOTYwZjQ5MWQ1MDYzOWU1NTY1N2IyMTJhYmMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3MjUyMiwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2Mjc1ODI0LCJleHAiOjE3ODYyNzk0MjQsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.LXFJEaheX9vzUlpCLC6UzX2SqvdRylD3a3WqaLU121G3mnPk2I8nHp617P6wxb7VIkzaDlKtYJpjkwF4usizyqDNZu9k2mxDeEusn7q6AfaGcLnrdTMojanzVKNkDCzuAFYLc0YdAigcQOsldXts-YVTTPtOBEln2t2xTIwqDEN2LhWog_H1MatP1rHcKw0xTSMx3kdv9WcrtL-WaewBydQDPVGTDUjnZ_ITopcKkMpCSS5yj-Fo473ZG3k3cpDeLsqMNYzYTaCWsE6zixfPwGCz5f4xu0nOGimgU6j8ZF81_FLFkSiKko0eB4PuL0IPLD_CQ7f3N4rMZ89jvupM_w","storageKey":"e7eHL02kVqMy019fILBt423Q9Tu1/1fDafA9Aq1wMXvrVCPK0/estateVision_cctv_background.mp4"}) in 302ms app/actions/get-storage-url.ts
+ POST /dashboard/upload 200 in 2.2s (next.js: 942ms, application-code: 1287ms)
+  └─ ƒ registerVideo({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzQ1NTQ4NTU1NTYxOTYwZjQ5MWQ1MDYzOWU1NTY1N2IyMTJhYmMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3MjUyMiwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2Mjc1ODI0LCJleHAiOjE3ODYyNzk0MjQsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.LXFJEaheX9vzUlpCLC6UzX2SqvdRylD3a3WqaLU121G3mnPk2I8nHp617P6wxb7VIkzaDlKtYJpjkwF4usizyqDNZu9k2mxDeEusn7q6AfaGcLnrdTMojanzVKNkDCzuAFYLc0YdAigcQOsldXts-YVTTPtOBEln2t2xTIwqDEN2LhWog_H1MatP1rHcKw0xTSMx3kdv9WcrtL-WaewBydQDPVGTDUjnZ_ITopcKkMpCSS5yj-Fo473ZG3k3cpDeLsqMNYzYTaCWsE6zixfPwGCz5f4xu0nOGimgU6j8ZF81_FLFkSiKko0eB4PuL0IPLD_CQ7f3N4rMZ89jvupM_w","name":"estateVision_cctv_background.mp4","...":"1 item not stringified"}) in 637ms app/actions/register-video.ts
+ POST /dashboard/upload 200 in 3.3s (next.js: 579ms, application-code: 2.7s)
+  └─ ƒ getStorageUrl({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzQ1NTQ4NTU1NTYxOTYwZjQ5MWQ1MDYzOWU1NTY1N2IyMTJhYmMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3MjUyMiwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2Mjc1ODI0LCJleHAiOjE3ODYyNzk0MjQsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.LXFJEaheX9vzUlpCLC6UzX2SqvdRylD3a3WqaLU121G3mnPk2I8nHp617P6wxb7VIkzaDlKtYJpjkwF4usizyqDNZu9k2mxDeEusn7q6AfaGcLnrdTMojanzVKNkDCzuAFYLc0YdAigcQOsldXts-YVTTPtOBEln2t2xTIwqDEN2LhWog_H1MatP1rHcKw0xTSMx3kdv9WcrtL-WaewBydQDPVGTDUjnZ_ITopcKkMpCSS5yj-Fo473ZG3k3cpDeLsqMNYzYTaCWsE6zixfPwGCz5f4xu0nOGimgU6j8ZF81_FLFkSiKko0eB4PuL0IPLD_CQ7f3N4rMZ89jvupM_w","storageKey":"e7eHL02kVqMy019fILBt423Q9Tu1/4fx9HS46s0av7oQnKUSp/estateVision_cctv_background.mp4"}) in 702ms app/actions/get-storage-url.ts
+ POST /dashboard/upload 200 in 3.1s (next.js: 688ms, application-code: 2.4s)
+  └─ ƒ registerVideo({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzQ1NTQ4NTU1NTYxOTYwZjQ5MWQ1MDYzOWU1NTY1N2IyMTJhYmMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3MjUyMiwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2Mjc1ODI0LCJleHAiOjE3ODYyNzk0MjQsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.LXFJEaheX9vzUlpCLC6UzX2SqvdRylD3a3WqaLU121G3mnPk2I8nHp617P6wxb7VIkzaDlKtYJpjkwF4usizyqDNZu9k2mxDeEusn7q6AfaGcLnrdTMojanzVKNkDCzuAFYLc0YdAigcQOsldXts-YVTTPtOBEln2t2xTIwqDEN2LhWog_H1MatP1rHcKw0xTSMx3kdv9WcrtL-WaewBydQDPVGTDUjnZ_ITopcKkMpCSS5yj-Fo473ZG3k3cpDeLsqMNYzYTaCWsE6zixfPwGCz5f4xu0nOGimgU6j8ZF81_FLFkSiKko0eB4PuL0IPLD_CQ7f3N4rMZ89jvupM_w","name":"estateVision_cctv_background.mp4","...":"1 item not stringified"}) in 1217ms app/actions/register-video.ts
+ POST /dashboard/upload 200 in 1785ms (next.js: 121ms, application-code: 1665ms)
+  └─ ƒ getStorageUrl({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzQ1NTQ4NTU1NTYxOTYwZjQ5MWQ1MDYzOWU1NTY1N2IyMTJhYmMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3MjUyMiwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2Mjc1ODI0LCJleHAiOjE3ODYyNzk0MjQsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.LXFJEaheX9vzUlpCLC6UzX2SqvdRylD3a3WqaLU121G3mnPk2I8nHp617P6wxb7VIkzaDlKtYJpjkwF4usizyqDNZu9k2mxDeEusn7q6AfaGcLnrdTMojanzVKNkDCzuAFYLc0YdAigcQOsldXts-YVTTPtOBEln2t2xTIwqDEN2LhWog_H1MatP1rHcKw0xTSMx3kdv9WcrtL-WaewBydQDPVGTDUjnZ_ITopcKkMpCSS5yj-Fo473ZG3k3cpDeLsqMNYzYTaCWsE6zixfPwGCz5f4xu0nOGimgU6j8ZF81_FLFkSiKko0eB4PuL0IPLD_CQ7f3N4rMZ89jvupM_w","storageKey":"e7eHL02kVqMy019fILBt423Q9Tu1/JJAviuasmjm53x2hH52B/estateVision_cctv_background.mp4"}) in 878ms app/actions/get-storage-url.ts
+ GET /dashboard/upload 200 in 2.2s (next.js: 116ms, application-code: 2.1s)
+ POST /dashboard/upload 200 in 3.5s (next.js: 983ms, application-code: 2.5s)
+  └─ ƒ registerVideo({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzQ1NTQ4NTU1NTYxOTYwZjQ5MWQ1MDYzOWU1NTY1N2IyMTJhYmMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3MjUyMiwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2Mjc2NjMwLCJleHAiOjE3ODYyODAyMzAsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.Xi06_CH3NrZZ9FKQSetiPmnXSBPc_EC2XSoKLgCJjeSwHyc6dJcjJSL048KxJdrsxGwmLZzzJijOni0pLqqtZwQBoynU1W6DAPN154qX5v_hrpPLjuMfqb6dvMrTlVnW3vGfuFhRn0w6T8RLklnbC6OOBOAatFpZ3IXHl0cLdXm7OYdh9eYv2VB7nE7j05MJWLXqMUnsqyPBh1hmFtCYhUs44aPYolGoy32q7q9oXDOy9k_pjM6NPuB0AR4e-7xJafWWmMEdwe1XQ--i_Uv2vUctNvE0_-IHwcu9oy7ibhaToj429ggUypqhxauVSIZgDjEp71guY4wJq_mOJzkGFQ","name":"estateVision_cctv_background.mp4","...":"1 item not stringified"}) in 1376ms app/actions/register-video.ts
+ POST /dashboard/upload 200 in 1349ms (next.js: 99ms, application-code: 1250ms)
+  └─ ƒ getStorageUrl({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzQ1NTQ4NTU1NTYxOTYwZjQ5MWQ1MDYzOWU1NTY1N2IyMTJhYmMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3MjUyMiwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2Mjc2NjMwLCJleHAiOjE3ODYyODAyMzAsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.Xi06_CH3NrZZ9FKQSetiPmnXSBPc_EC2XSoKLgCJjeSwHyc6dJcjJSL048KxJdrsxGwmLZzzJijOni0pLqqtZwQBoynU1W6DAPN154qX5v_hrpPLjuMfqb6dvMrTlVnW3vGfuFhRn0w6T8RLklnbC6OOBOAatFpZ3IXHl0cLdXm7OYdh9eYv2VB7nE7j05MJWLXqMUnsqyPBh1hmFtCYhUs44aPYolGoy32q7q9oXDOy9k_pjM6NPuB0AR4e-7xJafWWmMEdwe1XQ--i_Uv2vUctNvE0_-IHwcu9oy7ibhaToj429ggUypqhxauVSIZgDjEp71guY4wJq_mOJzkGFQ","storageKey":"e7eHL02kVqMy019fILBt423Q9Tu1/Z4fgVi7GFXcYgOXQSAap/estateVision_cctv_background.mp4"}) in 567ms app/actions/get-storage-url.ts
+ POST /dashboard/upload 200 in 3.4s (next.js: 2.7s, application-code: 693ms)
+  └─ ƒ registerVideo({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzQ1NTQ4NTU1NTYxOTYwZjQ5MWQ1MDYzOWU1NTY1N2IyMTJhYmMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3MjUyMiwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2Mjc2NjMwLCJleHAiOjE3ODYyODAyMzAsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.Xi06_CH3NrZZ9FKQSetiPmnXSBPc_EC2XSoKLgCJjeSwHyc6dJcjJSL048KxJdrsxGwmLZzzJijOni0pLqqtZwQBoynU1W6DAPN154qX5v_hrpPLjuMfqb6dvMrTlVnW3vGfuFhRn0w6T8RLklnbC6OOBOAatFpZ3IXHl0cLdXm7OYdh9eYv2VB7nE7j05MJWLXqMUnsqyPBh1hmFtCYhUs44aPYolGoy32q7q9oXDOy9k_pjM6NPuB0AR4e-7xJafWWmMEdwe1XQ--i_Uv2vUctNvE0_-IHwcu9oy7ibhaToj429ggUypqhxauVSIZgDjEp71guY4wJq_mOJzkGFQ","name":"estateVision_cctv_background.mp4","...":"1 item not stringified"}) in 449ms app/actions/register-video.ts
+ POST /dashboard/upload 200 in 789ms (next.js: 200ms, application-code: 589ms)
+  └─ ƒ getStorageUrl({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzQ1NTQ4NTU1NTYxOTYwZjQ5MWQ1MDYzOWU1NTY1N2IyMTJhYmMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3MjUyMiwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2Mjc2NjMwLCJleHAiOjE3ODYyODAyMzAsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.Xi06_CH3NrZZ9FKQSetiPmnXSBPc_EC2XSoKLgCJjeSwHyc6dJcjJSL048KxJdrsxGwmLZzzJijOni0pLqqtZwQBoynU1W6DAPN154qX5v_hrpPLjuMfqb6dvMrTlVnW3vGfuFhRn0w6T8RLklnbC6OOBOAatFpZ3IXHl0cLdXm7OYdh9eYv2VB7nE7j05MJWLXqMUnsqyPBh1hmFtCYhUs44aPYolGoy32q7q9oXDOy9k_pjM6NPuB0AR4e-7xJafWWmMEdwe1XQ--i_Uv2vUctNvE0_-IHwcu9oy7ibhaToj429ggUypqhxauVSIZgDjEp71guY4wJq_mOJzkGFQ","storageKey":"e7eHL02kVqMy019fILBt423Q9Tu1/SlxYq7srnm30PutvuxZb/estateVision_cctv_background.mp4"}) in 308ms app/actions/get-storage-url.ts
+✓ Compiled in 21.8s
+ GET /dashboard/upload 200 in 23.7s (next.js: 18.4s, application-code: 5.4s)
+ POST /dashboard/upload 200 in 5.8s (next.js: 245ms, application-code: 5.5s)
+  └─ ƒ registerVideo({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzQ1NTQ4NTU1NTYxOTYwZjQ5MWQ1MDYzOWU1NTY1N2IyMTJhYmMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3MjUyMiwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2Mjc2NjMwLCJleHAiOjE3ODYyODAyMzAsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.Xi06_CH3NrZZ9FKQSetiPmnXSBPc_EC2XSoKLgCJjeSwHyc6dJcjJSL048KxJdrsxGwmLZzzJijOni0pLqqtZwQBoynU1W6DAPN154qX5v_hrpPLjuMfqb6dvMrTlVnW3vGfuFhRn0w6T8RLklnbC6OOBOAatFpZ3IXHl0cLdXm7OYdh9eYv2VB7nE7j05MJWLXqMUnsqyPBh1hmFtCYhUs44aPYolGoy32q7q9oXDOy9k_pjM6NPuB0AR4e-7xJafWWmMEdwe1XQ--i_Uv2vUctNvE0_-IHwcu9oy7ibhaToj429ggUypqhxauVSIZgDjEp71guY4wJq_mOJzkGFQ","name":"estateVision_cctv_background.mp4","...":"1 item not stringified"}) in 2845ms app/actions/register-video.ts
+ POST /dashboard/upload 200 in 1821ms (next.js: 100ms, application-code: 1721ms)
+  └─ ƒ getStorageUrl({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzQ1NTQ4NTU1NTYxOTYwZjQ5MWQ1MDYzOWU1NTY1N2IyMTJhYmMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3MjUyMiwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2Mjc2NjMwLCJleHAiOjE3ODYyODAyMzAsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.Xi06_CH3NrZZ9FKQSetiPmnXSBPc_EC2XSoKLgCJjeSwHyc6dJcjJSL048KxJdrsxGwmLZzzJijOni0pLqqtZwQBoynU1W6DAPN154qX5v_hrpPLjuMfqb6dvMrTlVnW3vGfuFhRn0w6T8RLklnbC6OOBOAatFpZ3IXHl0cLdXm7OYdh9eYv2VB7nE7j05MJWLXqMUnsqyPBh1hmFtCYhUs44aPYolGoy32q7q9oXDOy9k_pjM6NPuB0AR4e-7xJafWWmMEdwe1XQ--i_Uv2vUctNvE0_-IHwcu9oy7ibhaToj429ggUypqhxauVSIZgDjEp71guY4wJq_mOJzkGFQ","storageKey":"e7eHL02kVqMy019fILBt423Q9Tu1/0cljJD7OHTQnwuMwtJuW/estateVision_cctv_background.mp4"}) in 1124ms app/actions/get-storage-url.ts
+✓ Finished writing to filesystem cache in 14.8s
+✓ Compiled in 28.7s
+✓ Finished writing to filesystem cache in 11.5s
+ POST /dashboard/upload 200 in 43s (next.js: 36.1s, application-code: 7.0s)
+  └─ ƒ registerVideo({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzQ1NTQ4NTU1NTYxOTYwZjQ5MWQ1MDYzOWU1NTY1N2IyMTJhYmMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3MjUyMiwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2Mjc2NjMwLCJleHAiOjE3ODYyODAyMzAsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.Xi06_CH3NrZZ9FKQSetiPmnXSBPc_EC2XSoKLgCJjeSwHyc6dJcjJSL048KxJdrsxGwmLZzzJijOni0pLqqtZwQBoynU1W6DAPN154qX5v_hrpPLjuMfqb6dvMrTlVnW3vGfuFhRn0w6T8RLklnbC6OOBOAatFpZ3IXHl0cLdXm7OYdh9eYv2VB7nE7j05MJWLXqMUnsqyPBh1hmFtCYhUs44aPYolGoy32q7q9oXDOy9k_pjM6NPuB0AR4e-7xJafWWmMEdwe1XQ--i_Uv2vUctNvE0_-IHwcu9oy7ibhaToj429ggUypqhxauVSIZgDjEp71guY4wJq_mOJzkGFQ","name":"estateVision_cctv_background.mp4","...":"1 item not stringified"}) in 5372ms app/actions/register-video.ts
+ POST /dashboard/upload 200 in 8.6s (next.js: 1135ms, application-code: 7.4s)
+  └─ ƒ getStorageUrl({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzQ1NTQ4NTU1NTYxOTYwZjQ5MWQ1MDYzOWU1NTY1N2IyMTJhYmMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3MjUyMiwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2Mjc2NjMwLCJleHAiOjE3ODYyODAyMzAsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.Xi06_CH3NrZZ9FKQSetiPmnXSBPc_EC2XSoKLgCJjeSwHyc6dJcjJSL048KxJdrsxGwmLZzzJijOni0pLqqtZwQBoynU1W6DAPN154qX5v_hrpPLjuMfqb6dvMrTlVnW3vGfuFhRn0w6T8RLklnbC6OOBOAatFpZ3IXHl0cLdXm7OYdh9eYv2VB7nE7j05MJWLXqMUnsqyPBh1hmFtCYhUs44aPYolGoy32q7q9oXDOy9k_pjM6NPuB0AR4e-7xJafWWmMEdwe1XQ--i_Uv2vUctNvE0_-IHwcu9oy7ibhaToj429ggUypqhxauVSIZgDjEp71guY4wJq_mOJzkGFQ","storageKey":"e7eHL02kVqMy019fILBt423Q9Tu1/KncP7fAl7ojNFEMu4bjU/estateVision_cctv_background.mp4"}) in 3484ms app/actions/get-storage-url.ts
+ POST /dashboard/upload 200 in 37.0s (next.js: 2.3s, application-code: 34.7s)
+  └─ ƒ startProcessing({"idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzQ1NTQ4NTU1NTYxOTYwZjQ5MWQ1MDYzOWU1NTY1N2IyMTJhYmMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3MjUyMiwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2Mjc2NjMwLCJleHAiOjE3ODYyODAyMzAsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.Xi06_CH3NrZZ9FKQSetiPmnXSBPc_EC2XSoKLgCJjeSwHyc6dJcjJSL048KxJdrsxGwmLZzzJijOni0pLqqtZwQBoynU1W6DAPN154qX5v_hrpPLjuMfqb6dvMrTlVnW3vGfuFhRn0w6T8RLklnbC6OOBOAatFpZ3IXHl0cLdXm7OYdh9eYv2VB7nE7j05MJWLXqMUnsqyPBh1hmFtCYhUs44aPYolGoy32q7q9oXDOy9k_pjM6NPuB0AR4e-7xJafWWmMEdwe1XQ--i_Uv2vUctNvE0_-IHwcu9oy7ibhaToj429ggUypqhxauVSIZgDjEp71guY4wJq_mOJzkGFQ","videoId":"KncP7fAl7ojNFEMu4bjU"}) in 33331ms app/actions/start-processing.ts
+ GET /dashboard/upload 200 in 43s (next.js: 1215ms, application-code: 42s)
+ GET /dashboard/upload 200 in 39.2s (next.js: 5.2s, application-code: 34.0s)
+ GET /dashboard/upload 200 in 13.4s (next.js: 91ms, application-code: 13.4s)
+ GET /dashboard/upload 200 in 13.5s (next.js: 5.2s, application-code: 8.3s)
+⨯ Error: Jest worker encountered 2 child process exceptions, exceeding retry limit
+    at ignore-listed frames {
+  type: 'WorkerError',
+  page: '/dashboard/video/KncP7fAl7ojNFEMu4bjU'
+}
+ GET /dashboard/video/KncP7fAl7ojNFEMu4bjU 500 in 18.9s (next.js: 17.9s, application-code: 980ms)
+⨯ Error: Jest worker encountered 2 child process exceptions, exceeding retry limit
+    at ignore-listed frames {
+  type: 'WorkerError',
+  page: '/dashboard/video/KncP7fAl7ojNFEMu4bjU'
+}
+ GET /dashboard/video/KncP7fAl7ojNFEMu4bjU 500 in 11.9s (next.js: 9.5s, application-code: 2.4s)
+[browser] Uncaught Error: Jest worker encountered 2 child process exceptions, exceeding retry limit
+✓ Compiled in 18.2s
+✓ Finished writing to filesystem cache in 20.2s
+ GET /dashboard/video/KncP7fAl7ojNFEMu4bjU 200 in 20.3s
+  Reload env: .env.local
+⨯ Error: Jest worker encountered 2 child process exceptions, exceeding retry limit
+    at ignore-listed frames {
+  type: 'WorkerError',
+  page: '/dashboard/video/KncP7fAl7ojNFEMu4bjU'
+}
+✓ Compiled in 47.5s
+ GET /dashboard/video/KncP7fAl7ojNFEMu4bjU 200 in 2.2min
+⨯ Error: Jest worker encountered 2 child process exceptions, exceeding retry limit
+    at ignore-listed frames {
+  type: 'WorkerError',
+  page: '/dashboard/video/KncP7fAl7ojNFEMu4bjU'
+}
+✓ Finished writing to filesystem cache in 86s
+[browser] [2026-08-09T12:44:07.959Z]  @firebase/firestore: Firestore (12.17.0): Could not reach Cloud Firestore backend. Backend didn't respond within 10 seconds.
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. 
+ GET /dashboard/upload 200 in 12.6s (next.js: 7.6s, application-code: 5.0s)
+ GET /dashboard 200 in 48s (next.js: 2.8s, application-code: 45s)
+Error: write EPIPE
+    at ignore-listed frames {
+  errno: -4047,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+⨯ uncaughtException: Error: write EPIPE
+    at ignore-listed frames {
+  errno: -4047,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+⨯ uncaughtException:  Error: write EPIPE
+    at ignore-listed frames {
+  errno: -4047,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+[browser] [2026-08-09T12:47:03.206Z]  @firebase/firestore: Firestore (12.17.0): Could not reach Cloud Firestore backend. Backend didn't respond within 10 seconds.
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. 
+ GET /login 200 in 8.1s (next.js: 6.0s, application-code: 2.2s)
+ GET /login 200 in 1507ms (next.js: 434ms, application-code: 1073ms)
+[browser] Image with src "/login-bg.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+ GET /login 200 in 57s (next.js: 2.7s, application-code: 54s)
+[browser] Image with src "/login-bg.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+ GET /dashboard 200 in 7.0s (next.js: 1426ms, application-code: 5.6s)
+ GET /dashboard 200 in 4.2s (next.js: 319ms, application-code: 3.8s)
+ GET /dashboard/upload 200 in 3.1s (next.js: 827ms, application-code: 2.3s)
+ POST /dashboard/upload 200 in 29.8s (next.js: 8.4s, application-code: 21.4s)
+  └─ ƒ registerVideo({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzQ1NTQ4NTU1NTYxOTYwZjQ5MWQ1MDYzOWU1NTY1N2IyMTJhYmMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3OTkwNSwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2Mjc5OTA1LCJleHAiOjE3ODYyODM1MDUsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.ee-KeDb48GT2XPmOvHIPZYz4DYKKOKLGd6uWlFenHyEoosMxLxRBY_as1uWhS_PjoGBUsRyXZiGjkAhWUur6uwImIqN-zbrgvUktf7PcUIkbbg-n51_DC73HZTY_R4X8IIrmoxeY_zVD5YsOYsjzOZgSfpnIxt-9yN_9HKtY6Djm4TaH48SwAifsp89CD4Qj8WHiKqVtIHbQed_2GWozlZrmpsNpsMJIAnLHsKNZoZ0gNAbGXq5m1XGbCo4BRfsF660pD5ru7wYmrwk2QFcL1jyvxMkEFWpO6_r1u93MG78bgp8sUT93JgLzCFjDns24woacNjAXAEWkU3YwhLnZxw","name":"estateVision_cctv_background.mp4","...":"1 item not stringified"}) in 16475ms app/actions/register-video.ts
+ POST /dashboard/upload 200 in 959ms (next.js: 196ms, application-code: 763ms)
+  └─ ƒ getStorageUrl({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzQ1NTQ4NTU1NTYxOTYwZjQ5MWQ1MDYzOWU1NTY1N2IyMTJhYmMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3OTkwNSwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2Mjc5OTA1LCJleHAiOjE3ODYyODM1MDUsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.ee-KeDb48GT2XPmOvHIPZYz4DYKKOKLGd6uWlFenHyEoosMxLxRBY_as1uWhS_PjoGBUsRyXZiGjkAhWUur6uwImIqN-zbrgvUktf7PcUIkbbg-n51_DC73HZTY_R4X8IIrmoxeY_zVD5YsOYsjzOZgSfpnIxt-9yN_9HKtY6Djm4TaH48SwAifsp89CD4Qj8WHiKqVtIHbQed_2GWozlZrmpsNpsMJIAnLHsKNZoZ0gNAbGXq5m1XGbCo4BRfsF660pD5ru7wYmrwk2QFcL1jyvxMkEFWpO6_r1u93MG78bgp8sUT93JgLzCFjDns24woacNjAXAEWkU3YwhLnZxw","storageKey":"e7eHL02kVqMy019fILBt423Q9Tu1/RpbqJiWh1Xv7bNaxgVpA/estateVision_cctv_background.mp4"}) in 183ms app/actions/get-storage-url.ts
+ POST /dashboard/upload 200 in 3.4s (next.js: 286ms, application-code: 3.1s)
+  └─ ƒ startProcessing({"idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzQ1NTQ4NTU1NTYxOTYwZjQ5MWQ1MDYzOWU1NTY1N2IyMTJhYmMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3OTkwNSwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2Mjc5OTA1LCJleHAiOjE3ODYyODM1MDUsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.ee-KeDb48GT2XPmOvHIPZYz4DYKKOKLGd6uWlFenHyEoosMxLxRBY_as1uWhS_PjoGBUsRyXZiGjkAhWUur6uwImIqN-zbrgvUktf7PcUIkbbg-n51_DC73HZTY_R4X8IIrmoxeY_zVD5YsOYsjzOZgSfpnIxt-9yN_9HKtY6Djm4TaH48SwAifsp89CD4Qj8WHiKqVtIHbQed_2GWozlZrmpsNpsMJIAnLHsKNZoZ0gNAbGXq5m1XGbCo4BRfsF660pD5ru7wYmrwk2QFcL1jyvxMkEFWpO6_r1u93MG78bgp8sUT93JgLzCFjDns24woacNjAXAEWkU3YwhLnZxw","videoId":"RpbqJiWh1Xv7bNaxgVpA"}) in 1641ms app/actions/start-processing.ts
+⨯ Error: Jest worker encountered 2 child process exceptions, exceeding retry limit
+    at ignore-listed frames {
+  type: 'WorkerError',
+  page: '/dashboard/video/RpbqJiWh1Xv7bNaxgVpA'
+}
+ GET /dashboard/video/RpbqJiWh1Xv7bNaxgVpA 500 in 3.1s (next.js: 2.4s, application-code: 715ms)
+⨯ Error: Jest worker encountered 2 child process exceptions, exceeding retry limit
+    at ignore-listed frames {
+  type: 'WorkerError',
+  page: '/dashboard/video/RpbqJiWh1Xv7bNaxgVpA'
+}
+ GET /dashboard/video/RpbqJiWh1Xv7bNaxgVpA 500 in 5.3s (next.js: 3.6s, application-code: 1736ms)
+[browser] Uncaught Error: Jest worker encountered 2 child process exceptions, exceeding retry limit
+ GET /dashboard/video/RpbqJiWh1Xv7bNaxgVpA 200 in 17.9s
+⨯ Error: Jest worker encountered 2 child process exceptions, exceeding retry limit
+    at ignore-listed frames {
+  type: 'WorkerError',
+  page: '/dashboard/video/RpbqJiWh1Xv7bNaxgVpA'
+}
+Error: write EPIPE
+    at ignore-listed frames {
+  errno: -4047,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+⨯ uncaughtException: Error: write EPIPE
+    at ignore-listed frames {
+  errno: -4047,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+⨯ uncaughtException:  Error: write EPIPE
+    at ignore-listed frames {
+  errno: -4047,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+Error: write EPIPE
+    at ignore-listed frames {
+  errno: -4047,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+⨯ uncaughtException: Error: write EPIPE
+    at ignore-listed frames {
+  errno: -4047,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+⨯ uncaughtException:  Error: write EPIPE
+    at ignore-listed frames {
+  errno: -4047,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+ GET /dashboard/upload 200 in 15.2s (next.js: 1990ms, application-code: 13.2s)
+ POST /dashboard/upload 200 in 10.5s (next.js: 3.4s, application-code: 7.1s)
+  └─ ƒ registerVideo({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzQ1NTQ4NTU1NTYxOTYwZjQ5MWQ1MDYzOWU1NTY1N2IyMTJhYmMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3OTkwNSwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2Mjc5OTA1LCJleHAiOjE3ODYyODM1MDUsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.ee-KeDb48GT2XPmOvHIPZYz4DYKKOKLGd6uWlFenHyEoosMxLxRBY_as1uWhS_PjoGBUsRyXZiGjkAhWUur6uwImIqN-zbrgvUktf7PcUIkbbg-n51_DC73HZTY_R4X8IIrmoxeY_zVD5YsOYsjzOZgSfpnIxt-9yN_9HKtY6Djm4TaH48SwAifsp89CD4Qj8WHiKqVtIHbQed_2GWozlZrmpsNpsMJIAnLHsKNZoZ0gNAbGXq5m1XGbCo4BRfsF660pD5ru7wYmrwk2QFcL1jyvxMkEFWpO6_r1u93MG78bgp8sUT93JgLzCFjDns24woacNjAXAEWkU3YwhLnZxw","name":"estateVision_colorful_real_estate_background.mp4","...":"1 item not stringified"}) in 3520ms app/actions/register-video.ts
+ POST /dashboard/upload 200 in 2.2s (next.js: 353ms, application-code: 1848ms)
+  └─ ƒ getStorageUrl({"contentType":"video/mp4","idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzQ1NTQ4NTU1NTYxOTYwZjQ5MWQ1MDYzOWU1NTY1N2IyMTJhYmMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3OTkwNSwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2Mjc5OTA1LCJleHAiOjE3ODYyODM1MDUsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.ee-KeDb48GT2XPmOvHIPZYz4DYKKOKLGd6uWlFenHyEoosMxLxRBY_as1uWhS_PjoGBUsRyXZiGjkAhWUur6uwImIqN-zbrgvUktf7PcUIkbbg-n51_DC73HZTY_R4X8IIrmoxeY_zVD5YsOYsjzOZgSfpnIxt-9yN_9HKtY6Djm4TaH48SwAifsp89CD4Qj8WHiKqVtIHbQed_2GWozlZrmpsNpsMJIAnLHsKNZoZ0gNAbGXq5m1XGbCo4BRfsF660pD5ru7wYmrwk2QFcL1jyvxMkEFWpO6_r1u93MG78bgp8sUT93JgLzCFjDns24woacNjAXAEWkU3YwhLnZxw","storageKey":"e7eHL02kVqMy019fILBt423Q9Tu1/yoghffXxzhC9dZPY1xFT/estateVision_colorful_real_estate_background.mp4"}) in 444ms app/actions/get-storage-url.ts
+ POST /dashboard/upload 200 in 1635ms (next.js: 164ms, application-code: 1471ms)
+  └─ ƒ startProcessing({"idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzQ1NTQ4NTU1NTYxOTYwZjQ5MWQ1MDYzOWU1NTY1N2IyMTJhYmMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiTG90dXMgSGFycGVyIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0s5YVZBUEppXzFRMXQ3SUpzOEtNSUI2V3ItekVaem5tLXZrRjhQOTVLVGZ5ejFtdz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9lc3RhdGUtdmlzaW9uLTZmOWI0IiwiYXVkIjoiZXN0YXRlLXZpc2lvbi02ZjliNCIsImF1dGhfdGltZSI6MTc4NjI3OTkwNSwidXNlcl9pZCI6ImU3ZUhMMDJrVnFNeTAxOWZJTEJ0NDIzUTlUdTEiLCJzdWIiOiJlN2VITDAya1ZxTXkwMTlmSUxCdDQyM1E5VHUxIiwiaWF0IjoxNzg2Mjc5OTA1LCJleHAiOjE3ODYyODM1MDUsImVtYWlsIjoibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkwMDIzNTIwNjU0ODQ1NTQ1NTQiXSwiZW1haWwiOlsibG90dXNoYXJwZXI0NjBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.ee-KeDb48GT2XPmOvHIPZYz4DYKKOKLGd6uWlFenHyEoosMxLxRBY_as1uWhS_PjoGBUsRyXZiGjkAhWUur6uwImIqN-zbrgvUktf7PcUIkbbg-n51_DC73HZTY_R4X8IIrmoxeY_zVD5YsOYsjzOZgSfpnIxt-9yN_9HKtY6Djm4TaH48SwAifsp89CD4Qj8WHiKqVtIHbQed_2GWozlZrmpsNpsMJIAnLHsKNZoZ0gNAbGXq5m1XGbCo4BRfsF660pD5ru7wYmrwk2QFcL1jyvxMkEFWpO6_r1u93MG78bgp8sUT93JgLzCFjDns24woacNjAXAEWkU3YwhLnZxw","videoId":"yoghffXxzhC9dZPY1xFT"}) in 1030ms app/actions/start-processing.ts
+⨯ Error: Jest worker encountered 2 child process exceptions, exceeding retry limit
+    at ignore-listed frames {
+  type: 'WorkerError',
+  page: '/dashboard/video/yoghffXxzhC9dZPY1xFT'
+}
+ GET /dashboard/video/yoghffXxzhC9dZPY1xFT 500 in 4.3s (next.js: 1383ms, application-code: 2.9s)
+⨯ Error: Jest worker encountered 2 child process exceptions, exceeding retry limit
+    at ignore-listed frames {
+  type: 'WorkerError',
+  page: '/dashboard/video/yoghffXxzhC9dZPY1xFT'
+}
+ GET /dashboard/video/yoghffXxzhC9dZPY1xFT 500 in 1708ms (next.js: 1335ms, application-code: 373ms)
+[browser] Uncaught Error: Jest worker encountered 2 child process exceptions, exceeding retry limit
+Error: write EPIPE
+    at ignore-listed frames {
+  errno: -4047,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+⨯ uncaughtException: Error: write EPIPE
+    at ignore-listed frames {
+  errno: -4047,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+⨯ uncaughtException:  Error: write EPIPE
+    at ignore-listed frames {
+  errno: -4047,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+⨯ Error: Jest worker encountered 2 child process exceptions, exceeding retry limit
+    at ignore-listed frames {
+  type: 'WorkerError',
+  page: '/dashboard/video/yoghffXxzhC9dZPY1xFT'
+}
+ GET /dashboard/video/yoghffXxzhC9dZPY1xFT 500 in 3.1s (next.js: 2.3s, application-code: 842ms)
+[browser] Uncaught Error: Jest worker encountered 2 child process exceptions, exceeding retry limit
+⨯ Error: Jest worker encountered 2 child process exceptions, exceeding retry limit
+    at ignore-listed frames {
+  type: 'WorkerError',
+  page: '/dashboard/video/yoghffXxzhC9dZPY1xFT'
+}
+ GET /dashboard/video/yoghffXxzhC9dZPY1xFT 500 in 14.9s (next.js: 6.6s, application-code: 8.4s)
+[browser] Uncaught Error: Jest worker encountered 2 child process exceptions, exceeding retry limit
+ GET /dashboard/upload 200 in 15.3s (next.js: 438ms, application-code: 14.9s)
+ GET /dashboard 200 in 33.7s (next.js: 2.8s, application-code: 30.9s)
+⨯ Error: Jest worker encountered 2 child process exceptions, exceeding retry limit
+    at ignore-listed frames {
+  type: 'WorkerError',
+  page: '/dashboard/video/yoghffXxzhC9dZPY1xFT'
+}
+ GET /dashboard/video/yoghffXxzhC9dZPY1xFT 500 in 26.2s (next.js: 5.7s, application-code: 20.5s)
+⨯ Error: Jest worker encountered 2 child process exceptions, exceeding retry limit
+    at ignore-listed frames {
+  type: 'WorkerError',
+  page: '/dashboard/video/yoghffXxzhC9dZPY1xFT'
+}
+ GET /dashboard/video/yoghffXxzhC9dZPY1xFT 500 in 10.6s (next.js: 9.8s, application-code: 790ms)
+[browser] Uncaught Error: Jest worker encountered 2 child process exceptions, exceeding retry limit
+[?25h

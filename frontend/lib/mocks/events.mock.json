@@ -1,0 +1,191 @@
+{
+  "videos": [
+    {
+      "id": "vid_01hq8kx2m4",
+      "user_id": "mock-user",
+      "name": "north-gate-2026-08-04.mp4",
+      "status": "complete",
+      "created_at": "2026-08-04T18:42:11.000Z",
+      "duration_seconds": 1847,
+      "size_bytes": 412839221,
+      "storage_key": "mock-user/vid_01hq8kx2m4/north-gate-2026-08-04.mp4",
+      "event_count": 6,
+      "thumbnail_url": null,
+      "error_message": null
+    },
+    {
+      "id": "vid_01hq8kx2m5",
+      "user_id": "mock-user",
+      "name": "loading-bay-overnight.mov",
+      "status": "complete",
+      "created_at": "2026-08-03T23:05:40.000Z",
+      "duration_seconds": 3612,
+      "size_bytes": 289471003,
+      "storage_key": "mock-user/vid_01hq8kx2m5/loading-bay-overnight.mov",
+      "event_count": 4,
+      "thumbnail_url": null,
+      "error_message": null
+    },
+    {
+      "id": "vid_01hq8kx2m6",
+      "user_id": "mock-user",
+      "name": "lobby-cam-3-morning.mp4",
+      "status": "processing",
+      "created_at": "2026-08-05T07:18:02.000Z",
+      "duration_seconds": 921,
+      "size_bytes": 104857600,
+      "storage_key": "mock-user/vid_01hq8kx2m6/lobby-cam-3-morning.mp4",
+      "event_count": 0,
+      "thumbnail_url": null,
+      "error_message": null
+    },
+    {
+      "id": "vid_01hq8kx2m7",
+      "user_id": "mock-user",
+      "name": "parking-level-b2.avi",
+      "status": "queued",
+      "created_at": "2026-08-05T07:44:55.000Z",
+      "duration_seconds": 0,
+      "size_bytes": 51380224,
+      "storage_key": "mock-user/vid_01hq8kx2m7/parking-level-b2.avi",
+      "event_count": 0,
+      "thumbnail_url": null,
+      "error_message": null
+    },
+    {
+      "id": "vid_01hq8kx2m8",
+      "user_id": "mock-user",
+      "name": "service-corridor-west.mp4",
+      "status": "failed",
+      "created_at": "2026-08-02T14:12:30.000Z",
+      "duration_seconds": 0,
+      "size_bytes": 8388608,
+      "storage_key": "mock-user/vid_01hq8kx2m8/service-corridor-west.mp4",
+      "event_count": 0,
+      "thumbnail_url": null,
+      "error_message": "The file ended earlier than its header said it would, so it could not be decoded. Re-export the clip and upload it again."
+    }
+  ],
+  "events": [
+    {
+      "id": "evt_7f1a20",
+      "video_id": "vid_01hq8kx2m4",
+      "user_id": "mock-user",
+      "timestamp_seconds": 42,
+      "object_class": "person",
+      "confidence": 0.94,
+      "severity": "safe",
+      "label": "Resident entered through the north gate",
+      "frame_url": null,
+      "bbox": [0.31, 0.22, 0.14, 0.46]
+    },
+    {
+      "id": "evt_7f1a21",
+      "video_id": "vid_01hq8kx2m4",
+      "user_id": "mock-user",
+      "timestamp_seconds": 318,
+      "object_class": "vehicle",
+      "confidence": 0.89,
+      "severity": "safe",
+      "label": "Delivery van parked in the visitor bay",
+      "frame_url": null,
+      "bbox": [0.08, 0.41, 0.37, 0.33]
+    },
+    {
+      "id": "evt_7f1a22",
+      "video_id": "vid_01hq8kx2m4",
+      "user_id": "mock-user",
+      "timestamp_seconds": 604,
+      "object_class": "package",
+      "confidence": 0.77,
+      "severity": "warning",
+      "label": "Package left unattended by the gate for 9 minutes",
+      "frame_url": null,
+      "bbox": [0.52, 0.68, 0.09, 0.11]
+    },
+    {
+      "id": "evt_7f1a23",
+      "video_id": "vid_01hq8kx2m4",
+      "user_id": "mock-user",
+      "timestamp_seconds": 1122,
+      "object_class": "person",
+      "confidence": 0.91,
+      "severity": "threat",
+      "label": "Person climbed the perimeter fence",
+      "frame_url": null,
+      "bbox": [0.61, 0.14, 0.12, 0.52]
+    },
+    {
+      "id": "evt_7f1a24",
+      "video_id": "vid_01hq8kx2m4",
+      "user_id": "mock-user",
+      "timestamp_seconds": 1290,
+      "object_class": "person",
+      "confidence": 0.68,
+      "severity": "warning",
+      "label": "Loitering near the mailbox cluster",
+      "frame_url": null,
+      "bbox": [0.44, 0.29, 0.11, 0.44]
+    },
+    {
+      "id": "evt_7f1a25",
+      "video_id": "vid_01hq8kx2m4",
+      "user_id": "mock-user",
+      "timestamp_seconds": 1701,
+      "object_class": "vehicle",
+      "confidence": 0.96,
+      "severity": "safe",
+      "label": "Resident vehicle exited the north gate",
+      "frame_url": null,
+      "bbox": [0.12, 0.38, 0.41, 0.36]
+    },
+    {
+      "id": "evt_7f1a26",
+      "video_id": "vid_01hq8kx2m5",
+      "user_id": "mock-user",
+      "timestamp_seconds": 187,
+      "object_class": "person",
+      "confidence": 0.83,
+      "severity": "safe",
+      "label": "Night porter completed a walk-through",
+      "frame_url": null,
+      "bbox": [0.27, 0.31, 0.13, 0.42]
+    },
+    {
+      "id": "evt_7f1a27",
+      "video_id": "vid_01hq8kx2m5",
+      "user_id": "mock-user",
+      "timestamp_seconds": 1455,
+      "object_class": "animal",
+      "confidence": 0.62,
+      "severity": "safe",
+      "label": "Stray cat crossed the loading bay",
+      "frame_url": null,
+      "bbox": [0.71, 0.79, 0.07, 0.06]
+    },
+    {
+      "id": "evt_7f1a28",
+      "video_id": "vid_01hq8kx2m5",
+      "user_id": "mock-user",
+      "timestamp_seconds": 2604,
+      "object_class": "vehicle",
+      "confidence": 0.88,
+      "severity": "warning",
+      "label": "Unregistered vehicle idled at the bay door for 14 minutes",
+      "frame_url": null,
+      "bbox": [0.19, 0.44, 0.39, 0.31]
+    },
+    {
+      "id": "evt_7f1a29",
+      "video_id": "vid_01hq8kx2m5",
+      "user_id": "mock-user",
+      "timestamp_seconds": 3301,
+      "object_class": "person",
+      "confidence": 0.79,
+      "severity": "threat",
+      "label": "Forced entry attempt on the bay shutter",
+      "frame_url": null,
+      "bbox": [0.55, 0.26, 0.15, 0.49]
+    }
+  ]
+}
