@@ -14,6 +14,7 @@ from contextlib import asynccontextmanager
 from pathlib import Path
 
 from fastapi import BackgroundTasks, Depends, FastAPI, HTTPException, status
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 from auth import require_worker_secret
@@ -40,6 +41,19 @@ async def lifespan(_: FastAPI):
 
 
 app = FastAPI(title="EstateVision Worker", version="1.0.0", lifespan=lifespan)
+
+# Allow requests from Vercel deployments and local development
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+    ],
+    allow_origin_regex=r"https://.*\.vercel\.app",
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 class ProcessVideoRequest(BaseModel):
@@ -176,3 +190,4 @@ def _fail(video_id: str, message: str) -> None:
         writer.mark_failed(video_id, message)
     except Exception:  # noqa: BLE001
         logger.exception("[%s] could not record failure state", video_id)
+        
