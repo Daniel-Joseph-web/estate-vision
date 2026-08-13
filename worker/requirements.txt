@@ -16,3 +16,4 @@ torch
 torchvision
 deepface
 tf-keras
+lapx>=0.5.5
