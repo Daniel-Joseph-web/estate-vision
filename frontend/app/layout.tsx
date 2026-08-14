@@ -30,8 +30,6 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      // `dark` is fixed: EstateVision has no light theme, and pinning the class
-      // keeps every shadcn `dark:` variant resolved on the first paint.
       className={`dark ${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-[#0A0A0A] text-slate-50">

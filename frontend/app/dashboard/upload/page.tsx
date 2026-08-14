@@ -191,7 +191,7 @@ export default function UploadPage() {
         )}
 
         {status === "success" && !warning && (
-          <p role="status" className="text-sm text-red-500">
+          <p role="status" className="text-sm text-green-500">
             Upload complete — opening your video…
           </p>
         )}

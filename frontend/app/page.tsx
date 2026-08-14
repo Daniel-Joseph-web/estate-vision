@@ -72,13 +72,15 @@ export default function Home() {
               width={449}
               height={109}
               priority
-              className="h-14 w-auto sm:h-16"
+              // Scaled down the logo size here
+              className="h-7 w-auto sm:h-8"
             />
           </Link>
 
           <Link
             href="/login"
-            className="ml-auto inline-flex h-9 items-center justify-center rounded-md bg-red-600 px-5 text-sm font-medium text-white transition-colors hover:bg-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
+            // Scaled down the button height, padding, and text size here
+            className="ml-auto inline-flex h-8 items-center justify-center rounded-md bg-red-600 px-4 text-xs font-medium text-white transition-colors hover:bg-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 sm:h-9 sm:px-5 sm:text-sm"
           >
             Login
           </Link>

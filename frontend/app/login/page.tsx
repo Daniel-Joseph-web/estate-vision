@@ -297,10 +297,19 @@ export default function LoginPage() {
       <div className="flex items-center justify-center px-6 py-16">
         <div className="w-full max-w-sm">
           <div className="text-center">
-            <span className="text-lg font-semibold tracking-tight text-red-500 lg:hidden">
-              estate<span className="text-slate-50">Vision</span>
-            </span>
-            <h1 className="mt-2 text-xl font-semibold text-slate-50 lg:mt-0">
+            {/* Added real logo for mobile/smaller screens */}
+            <div className="mb-6 flex justify-center lg:hidden">
+              <Image
+                src="/estate-logo-v2.png"
+                alt="estateVision"
+                width={449}
+                height={109}
+                priority
+                className="h-8 w-auto"
+              />
+            </div>
+            
+            <h1 className="text-xl font-semibold text-slate-50">
               {mode === "signin" ? "Sign in to your account" : "Create your account"}
             </h1>
             <p className="mt-2 text-sm text-slate-400">

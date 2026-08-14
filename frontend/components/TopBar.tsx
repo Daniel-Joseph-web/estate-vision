@@ -10,7 +10,6 @@ import { useEffect, useRef, useState } from "react";
 import { firebaseAuth } from "@/lib/firebase/client";
 import { useAuth } from "@/providers/auth-provider";
 
-/** First letters of the user's name or email, for the avatar. */
 function initials(label: string | null | undefined): string {
   if (!label) return "?";
   const base = label.includes("@") ? label.split("@")[0] : label;
@@ -22,9 +21,12 @@ function initials(label: string | null | undefined): string {
 export function TopBar() {
   const router = useRouter();
   const { user } = useAuth();
+  
+  // Menu state
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
+  // Handle clicking outside the menu to close it
   useEffect(() => {
     function handleClick(event: MouseEvent) {
       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
@@ -46,7 +48,7 @@ export function TopBar() {
   const label = user?.displayName ?? user?.email ?? null;
 
   return (
-    <header className="fixed inset-x-0 top-0 z-40 h-16 border-b border-neutral-800/80 bg-[#0A0A0A]/90 backdrop-blur-md">
+    <header className="fixed inset-x-0 top-0 z-50 h-16 border-b border-neutral-800/80 bg-[#0A0A0A]/90 backdrop-blur-md">
       <div className="flex h-full items-center gap-4 px-4 md:px-6">
         <Link href="/dashboard" className="flex items-center">
           <Image
@@ -62,7 +64,7 @@ export function TopBar() {
         <div className="ml-auto flex items-center gap-3">
           <Link
             href="/dashboard/upload"
-            className="inline-flex h-9 items-center gap-2 rounded-md bg-red-600 px-4 text-sm font-medium text-white transition-colors hover:bg-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
+            className="hidden md:inline-flex h-9 items-center gap-2 rounded-md bg-red-600 px-4 text-sm font-medium text-white transition-all hover:bg-red-700 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
           >
             <UploadIcon aria-hidden="true" className="size-4" />
             Upload Video
@@ -74,26 +76,29 @@ export function TopBar() {
               onClick={() => setMenuOpen((open) => !open)}
               aria-expanded={menuOpen}
               aria-label="Account menu"
-              className="flex size-9 items-center justify-center rounded-full border border-neutral-700 bg-neutral-900 text-xs font-semibold text-neutral-200 transition-colors hover:border-red-500/50"
+              className="flex size-9 cursor-pointer items-center justify-center rounded-full border border-neutral-600 bg-neutral-800 text-xs font-semibold text-white transition-all hover:border-red-500/50 hover:shadow-sm active:scale-95"
             >
               {initials(label)}
             </button>
 
             {menuOpen && (
-              <div className="absolute right-0 top-11 w-56 overflow-hidden rounded-xl border border-neutral-800 bg-neutral-900/95 py-1 shadow-xl backdrop-blur-md">
-                <div className="border-b border-neutral-800 px-3 py-2.5">
-                  <p className="truncate text-sm font-medium text-neutral-100">
+              <div className="absolute right-0 top-11 z-[60] w-64 overflow-hidden rounded-xl border border-neutral-800 bg-neutral-900/95 p-1.5 shadow-2xl backdrop-blur-md">
+                <div className="mb-1.5 border-b border-neutral-800 px-3 pb-3 pt-2">
+                  <p className="truncate text-sm font-semibold text-neutral-100">
                     {label ?? "Signed in"}
                   </p>
                 </div>
-                <button
-                  type="button"
-                  onClick={() => void handleSignOut()}
-                  className="flex w-full items-center gap-2 px-3 py-2.5 text-left text-sm text-neutral-300 transition-colors hover:bg-neutral-800/60 hover:text-red-400"
-                >
-                  <LogOutIcon aria-hidden="true" className="size-4" />
-                  Sign out
-                </button>
+                
+                <div className="flex flex-col gap-1">
+                  <button
+                    type="button"
+                    onClick={() => void handleSignOut()}
+                    className="flex w-full cursor-pointer items-center gap-3 rounded-md px-3 py-2.5 text-left text-sm font-medium text-red-400 outline-none transition-all hover:bg-red-950/30 active:scale-[0.98]"
+                  >
+                    <LogOutIcon aria-hidden="true" className="size-4" />
+                    Sign out
+                  </button>
+                </div>
               </div>
             )}
           </div>

@@ -12,6 +12,13 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: process.cwd(),
   },
+
+  // Allow larger Server Action request bodies (e.g., base64 screenshots)
+  experimental: {
+    serverActions: {
+      bodySizeLimit: "10mb",
+    },
+  },
 };
 
 export default nextConfig;

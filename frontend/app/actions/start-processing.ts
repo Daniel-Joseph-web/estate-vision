@@ -9,77 +9,52 @@ export type StartProcessingResult =
   | { ok: false; message: string };
 
 /**
- * Hands a finished upload to the worker.
+ * Called right after a video finishes uploading to storage.
  *
- * Called only after the browser's PUT to storage completes — the worker
- * downloads the object immediately, so notifying it any earlier races the
- * upload and fails on a key that doesn't exist yet.
+ * There is no more Python/Modal worker to hand this off to — analysis is
+ * now on-demand, driven by the ChatAnalyst drawer calling
+ * analyzeVideoSubject() per question, not a batch pipeline that runs once
+ * on upload. So this action no longer POSTs anywhere; it just flips the
+ * video's status so the detail page stops showing "Analysing footage…"
+ * and unlocks the UI (filters, delete, etc).
  */
 export async function startProcessing(input: {
   idToken: string;
   videoId: string;
 }): Promise<StartProcessingResult> {
   try {
-    // Nothing to hand off in mock mode; the fixture is already "processed".
-    if (USE_MOCKS) return { ok: true };
+    if (USE_MOCKS) {
+      return { ok: true };
+    }
 
     const user = await requireUser(input.idToken);
     const db = getAdminDb();
 
-    // Server Actions are reachable by direct POST, so confirm this caller
-    // actually owns the video before asking the worker to touch it. The
-    // user_id check is what makes a guessed video ID useless to an attacker.
     const videoRef = db.collection("videos").doc(input.videoId);
     const videoSnap = await videoRef.get();
 
     if (!videoSnap.exists) {
-      return { ok: false, message: "We couldn't find that upload." };
-    }
-    if (videoSnap.data()?.user_id !== user.uid) {
-      return { ok: false, message: "That upload doesn't belong to your account." };
+      return { ok: false, message: "That video isn't in your library." };
     }
 
-    const workerUrl = process.env.WORKER_URL;
-    const workerSecret = process.env.WORKER_SECRET;
-
-    if (!workerUrl || !workerSecret) {
-      return {
-        ok: false,
-        message:
-          "Video processing isn't configured yet. Contact your administrator.",
-      };
+    const videoData = videoSnap.data();
+    if (videoData?.user_id !== user.uid) {
+      return { ok: false, message: "That video doesn't belong to your account." };
     }
 
-    // We MUST `await` this fetch. Next.js server actions aggressively kill 
-    // "fire-and-forget" requests, which causes connection drops and errors.
-    // The worker replies instantly (202 Accepted) before starting the heavy YOLO 
-    // task, so awaiting this is perfectly safe and extremely fast.
-    const response = await fetch(`${workerUrl}/process-video`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "X-Worker-Secret": workerSecret,
-      },
-      body: JSON.stringify({ video_id: input.videoId }),
-      // Extended 30-second timeout to safely absorb brief Google Auth SSL network drops
-      signal: AbortSignal.timeout(30_000), 
+    await videoRef.update({
+      status: "complete",
+      error_message: null,
     });
 
-    if (!response.ok) {
-      return {
-        ok: false,
-        message:
-          "Your video uploaded, but analysis couldn't be started. It stays in your library — try again from the dashboard.",
-      };
-    }
-
     return { ok: true };
-  } catch {
-    // The upload itself succeeded; this is recoverable and must say so.
+  } catch (error) {
     return {
       ok: false,
       message:
-        "Your video uploaded, but analysis couldn't be started. It stays in your library — try again from the dashboard.",
+        error instanceof Error
+          ? error.message
+          : "We couldn't finish setting up this video.",
     };
   }
 }
