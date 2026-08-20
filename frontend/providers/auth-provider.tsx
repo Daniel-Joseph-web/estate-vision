@@ -70,7 +70,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(!mockAuth);
 
   useEffect(() => {
-    if (mockAuth || !firebaseAuth) return;
+    if (mockAuth) return;
+
+    // THE FIX: If Firebase fails to load, stop the spinner!
+    if (!firebaseAuth) {
+      setLoading(false);
+      return;
+    }
 
     return onAuthStateChanged(firebaseAuth, (firebaseUser) => {
       setUser(

@@ -1,6 +1,6 @@
 "use client";
 
-import { Loader2Icon, LayoutDashboardIcon, UploadIcon } from "lucide-react";
+import { Loader2Icon, LayoutDashboardIcon, UploadIcon, RadioTowerIcon } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { ReactNode } from "react";
@@ -48,6 +48,7 @@ function MobileNav() {
   const links = [
     { href: "/dashboard", label: "Dashboard", icon: LayoutDashboardIcon },
     { href: "/dashboard/upload", label: "Upload", icon: UploadIcon },
+    { href: "/dashboard/live", label: "Live Feed", icon: RadioTowerIcon }, // <-- ADD THIS LINE
   ];
 
   return (

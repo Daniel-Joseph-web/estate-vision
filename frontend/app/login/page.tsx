@@ -140,6 +140,10 @@ function ShowcasePanel() {
 
 export default function LoginPage() {
   const router = useRouter();
+
+  // ADD THIS LINE:
+  console.log("FIREBASE KEY VISIBLE:", process.env.NEXT_PUBLIC_FIREBASE_API_KEY ? "YES!" : "NO :(");
+
   const {
     user,
     loading: authLoading,

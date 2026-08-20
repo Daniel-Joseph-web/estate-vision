@@ -10,3 +10,5 @@ venv/
 
 # local verification artifacts
 .verify-shots/
+.vercel
+.env*

@@ -1,6 +1,6 @@
 "use client";
 
-import { AlertTriangleIcon, ArrowLeftIcon, Trash2Icon } from "lucide-react";
+import { AlertTriangleIcon, ArrowLeftIcon, RefreshCwIcon, Trash2Icon } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { use, useEffect, useRef, useState } from "react";
@@ -9,6 +9,7 @@ import { toast } from "sonner";
 import { ChatAnalyst } from "@/components/ChatAnalyst";
 import { StatusBadge } from "@/components/StatusBadge";
 import { VideoPlayer } from "@/components/VideoPlayer";
+import { VideoReportSummary } from "@/components/VideoReportSummary";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { getPlaybackUrl } from "@/app/actions/get-playback-url";
@@ -27,6 +28,8 @@ export default function VideoDetailPage({ params }: { params: Promise<{ id: stri
   const removeVideo = useVideoDetailStore((s) => s.removeVideo);
   const load = useVideoDetailStore((s) => s.load);
   const reset = useVideoDetailStore((s) => s.reset);
+  const retryProcessing = useVideoDetailStore((s) => s.retryProcessing);
+  const retrying = useVideoDetailStore((s) => s.retrying);
 
   const requestConfirmation = useUiStore((s) => s.requestConfirmation);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -74,6 +77,16 @@ export default function VideoDetailPage({ params }: { params: Promise<{ id: stri
         }
       },
     });
+  }
+
+  async function handleRetry() {
+    if (!video) return;
+    try {
+      await retryProcessing(video.id);
+      toast.success("Reprocessing started");
+    } catch (caught) {
+      toast.error(caught instanceof Error ? caught.message : "We couldn't restart processing.");
+    }
   }
 
   if (loading) {
@@ -131,16 +144,51 @@ export default function VideoDetailPage({ params }: { params: Promise<{ id: stri
                 </div>
               </div>
 
-              <Button variant="destructive" size="lg" onClick={confirmDelete}>
-                <Trash2Icon /> Delete Video
-              </Button>
+              <div className="flex shrink-0 gap-2">
+                {video.status === "failed" && (
+                  <Button
+                    size="lg"
+                    disabled={retrying}
+                    onClick={() => void handleRetry()}
+                    className="bg-red-600 text-white hover:bg-red-700"
+                  >
+                    <RefreshCwIcon className={retrying ? "animate-spin" : ""} />
+                    {retrying ? "Retrying…" : "Retry Processing"}
+                  </Button>
+                )}
+                <Button variant="destructive" size="lg" onClick={confirmDelete}>
+                  <Trash2Icon /> Delete Video
+                </Button>
+              </div>
             </div>
+
+            {video.status === "failed" && video.error_message && (
+              <div className="mt-4 flex items-start gap-3 rounded-xl border border-[#ff3333]/30 bg-[#ff3333]/10 p-4">
+                <AlertTriangleIcon className="mt-0.5 size-4 shrink-0 text-[#ff3333]" />
+                <div>
+                  <p className="text-sm font-medium text-[#ff3333]">Processing failed</p>
+                  <p className="mt-1 text-sm text-neutral-300">{video.error_message}</p>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Sticky wrapper for Mobile users */}
           <div className="sticky top-16 z-30 -mx-4 bg-[#0A0A0A] px-4 py-2 lg:static lg:mx-0 lg:bg-transparent lg:p-0">
             <VideoPlayer src={playbackUrl} poster={video.thumbnail_url} videoRef={videoRef} />
           </div>
+
+          {/* Video Report Summary Panel */}
+          <VideoReportSummary
+            videoName={video.name}
+            createdAt={video.created_at}
+            // Uses 'any' cast temporarily until you finalize your database schema for the report
+            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-explicit-any
+            summary={(video as any).summary_report ?? "Awaiting initial Gemini processing..."}
+            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-explicit-any
+            threatDetected={(video as any).threat_detected ?? false}
+            onSeek={seek}
+          />
         </div>
 
         {/* RIGHT COLUMN: AI Chat Analyst */}

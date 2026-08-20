@@ -1,6 +1,6 @@
 "use client";
 
-import { LayoutDashboardIcon, UploadIcon } from "lucide-react";
+import { LayoutDashboardIcon, UploadIcon, RadioTowerIcon } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { ComponentType } from "react";
@@ -12,6 +12,7 @@ const NAV_ITEMS: {
 }[] = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboardIcon },
   { href: "/dashboard/upload", label: "Upload", icon: UploadIcon },
+  { href: "/dashboard/live", label: "Live", icon: RadioTowerIcon }, // <-- ADD THIS LINE
 ];
 
 export function Sidebar() {

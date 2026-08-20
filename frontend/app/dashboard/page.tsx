@@ -1,6 +1,14 @@
 "use client";
 
-import { AlertTriangleIcon, ChevronRightIcon, Trash2Icon, VideoIcon, SearchIcon } from "lucide-react";
+import { 
+  AlertTriangleIcon, 
+  ChevronRightIcon, 
+  Trash2Icon, 
+  VideoIcon, 
+  SearchIcon, 
+  FilterIcon, 
+  ShieldCheckIcon 
+} from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
@@ -142,10 +150,18 @@ function PopulatedView({
   const requestConfirmation = useUiStore((s) => s.requestConfirmation);
   const [hiddenIds, setHiddenIds] = useState<Set<string>>(new Set());
   const [searchQuery, setSearchQuery] = useState("");
+  const [threatsOnly, setThreatsOnly] = useState(false);
 
   const visibleUploads = summary.recent_uploads
     .filter((v) => !hiddenIds.has(v.id))
-    .filter((v) => v.name.toLowerCase().includes(searchQuery.toLowerCase()));
+    .filter((v) => v.name.toLowerCase().includes(searchQuery.toLowerCase()))
+    .filter((v) => {
+      if (threatsOnly) {
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-explicit-any
+        return (v as any).threat_detected === true;
+      }
+      return true;
+    });
 
   const optimisticTotalVideos = Math.max(0, summary.total_videos - hiddenIds.size);
 
@@ -189,6 +205,16 @@ function PopulatedView({
 
   return (
     <div className="space-y-10">
+      
+      {/* System Status Alert Box */}
+      <div className="flex items-center gap-3 rounded-xl border border-emerald-500/30 bg-emerald-500/10 p-4">
+        <ShieldCheckIcon className="size-5 text-emerald-400 shrink-0" />
+        <div>
+          <h3 className="text-sm font-semibold text-emerald-400">System Operational</h3>
+          <p className="text-xs text-emerald-500/80">EstateVision AI is actively monitoring your properties. All ingest pipelines are healthy.</p>
+        </div>
+      </div>
+
       <div className="grid items-start gap-4 sm:grid-cols-1">
         <MetricCard
           label="Videos processed"
@@ -207,21 +233,36 @@ function PopulatedView({
             </span>
           </div>
 
-          <div className="relative w-full sm:max-w-xs">
-            <SearchIcon aria-hidden="true" className="absolute left-3 top-1/2 size-4 -translate-y-1/2 text-neutral-500" />
-            <Input
-              placeholder="Search videos by name..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="pl-9 border-neutral-800 bg-neutral-900/70 focus-visible:ring-red-500/40 focus-visible:border-red-500/60"
-            />
+          <div className="flex flex-col sm:flex-row items-center gap-2 w-full sm:w-auto">
+            <div className="relative w-full sm:w-64">
+              <SearchIcon aria-hidden="true" className="absolute left-3 top-1/2 size-4 -translate-y-1/2 text-neutral-500" />
+              <Input
+                placeholder="Search videos by name..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="pl-9 h-9 border-neutral-800 bg-neutral-900/70 focus-visible:ring-red-500/40 focus-visible:border-red-500/60"
+              />
+            </div>
+            
+            <Button
+              variant="outline"
+              onClick={() => setThreatsOnly(!threatsOnly)}
+              className={`h-9 w-full sm:w-auto border-neutral-800 transition-colors ${
+                threatsOnly 
+                  ? "bg-red-500/10 text-red-400 border-red-500/30 hover:bg-red-500/20" 
+                  : "bg-neutral-900/70 text-neutral-400 hover:text-neutral-200 hover:bg-neutral-800"
+              }`}
+            >
+              <FilterIcon className="size-4 mr-2" />
+              Threats Only
+            </Button>
           </div>
         </div>
 
         {visibleUploads.length === 0 ? (
           <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-neutral-800 bg-neutral-900/40 py-12 text-center">
             <SearchIcon className="size-8 text-neutral-600 mb-2" />
-            <p className="text-sm text-neutral-400">No videos match your search.</p>
+            <p className="text-sm text-neutral-400">No videos match your filters.</p>
           </div>
         ) : (
           <ul className="divide-y divide-neutral-800/80 overflow-hidden rounded-2xl border border-neutral-800/80 bg-neutral-900/40">
