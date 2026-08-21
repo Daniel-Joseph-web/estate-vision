@@ -141,7 +141,6 @@ function ShowcasePanel() {
 export default function LoginPage() {
   const router = useRouter();
 
-  // ADD THIS LINE:
   console.log("FIREBASE KEY VISIBLE:", process.env.NEXT_PUBLIC_FIREBASE_API_KEY ? "YES!" : "NO :(");
 
   const {
@@ -205,6 +204,11 @@ export default function LoginPage() {
       await signInWithPopup(firebaseAuth, googleProvider);
       router.replace("/dashboard");
     } catch (error) {
+      // ---------------------------------------------------------
+      // ADDED: Logs the raw Firebase error directly to the console
+      // ---------------------------------------------------------
+      console.error("FULL FIREBASE GOOGLE ERROR:", error); 
+      
       const code = (error as { code?: string })?.code ?? "";
       // Closing the popup is a deliberate cancel, not an error worth shouting about.
       if (
@@ -243,6 +247,11 @@ export default function LoginPage() {
       }
       router.replace("/dashboard");
     } catch (error) {
+      // ---------------------------------------------------------
+      // ADDED: Logs the raw Firebase error directly to the console
+      // ---------------------------------------------------------
+      console.error("FULL FIREBASE EMAIL ERROR:", error);
+
       // Fields stay filled so the user can correct one character and retry.
       toast.error(
         mode === "signin"
