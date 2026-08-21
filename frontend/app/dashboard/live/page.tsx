@@ -178,23 +178,14 @@ export default function LiveOperationsPage() {
             {!isDetecting && (
               <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px] flex items-center justify-center transition-opacity duration-500">
                 <span className="flex items-center gap-2 rounded-full border border-amber-500/40 bg-black/70 px-4 py-1.5 font-mono text-xs text-amber-400">
-                  <AlertTriangleIcon className="size-3.5" /> DETECTION OFFLINE — FEED STILL LIVE
+                  <AlertTriangleIcon className="size-3.5 flex-shrink-0" /> 
+                  <span className="hidden sm:inline">DETECTION OFFLINE — FEED STILL LIVE</span>
+                  <span className="sm:hidden">OFFLINE</span>
                 </span>
               </div>
             )}
 
-            {/* Auto-Typing AI HUD */}
-            <div className="absolute bottom-4 left-4 right-4 bg-black/70 backdrop-blur-md border border-red-500/30 rounded-lg p-3">
-              <div className="flex items-center gap-2 mb-1">
-                <Terminal className="size-4 text-red-400" />
-                <span className="text-xs font-mono text-red-400">GEMINI VISION WORKER</span>
-              </div>
-              <p className="font-mono text-sm text-neutral-100">
-                &gt; {typewriterText}
-                <span className="animate-pulse ml-1 inline-block w-2 h-4 bg-red-500 align-middle"></span>
-              </p>
-            </div>
-
+            {/* Camera Label */}
             <div className="absolute top-4 left-4">
               <span className="rounded bg-black/60 px-2 py-1 font-mono text-xs text-white backdrop-blur-md border border-white/10">
                 {activeCam.name}
@@ -202,7 +193,20 @@ export default function LiveOperationsPage() {
             </div>
           </div>
 
-          <div className="flex gap-3">
+          {/* Auto-Typing AI HUD - Moved OUTSIDE the video so it never blocks the feed on mobile */}
+          <div className="bg-neutral-900/80 backdrop-blur-md border border-red-500/30 rounded-lg p-3 shadow-lg">
+            <div className="flex items-center gap-2 mb-1">
+              <Terminal className="size-4 text-red-400" />
+              <span className="text-xs font-mono text-red-400">GEMINI VISION WORKER</span>
+            </div>
+            <p className="font-mono text-sm text-neutral-100 min-h-[1.25rem]">
+              &gt; {typewriterText}
+              <span className="animate-pulse ml-1 inline-block w-2 h-4 bg-red-500 align-middle"></span>
+            </p>
+          </div>
+
+          {/* Controls - Added flex-wrap for smaller mobile screens */}
+          <div className="flex flex-wrap gap-3">
             <Button onClick={toggleDetection} className={isDetecting ? "bg-amber-600 hover:bg-amber-700" : "bg-emerald-600 hover:bg-emerald-700"}>
               {isDetecting ? <Square className="size-4 mr-2" /> : <Play className="size-4 mr-2" />}
               {isDetecting ? "Stop Detection" : "Resume Analysis"}

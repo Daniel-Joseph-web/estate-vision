@@ -56,7 +56,7 @@ export default function VideoDetailPage({ params }: { params: Promise<{ id: stri
     const element = videoRef.current;
     if (!element) return;
     element.currentTime = seconds;
-    void element.play().catch(() => {});
+    element.pause();
   }
 
   function confirmDelete() {
